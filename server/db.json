@@ -1,0 +1,2651 @@
+{
+  "todos": [
+    {
+      "id": 0,
+      "name": "Go to the gym"
+    },
+    {
+      "id": 1,
+      "name": "Walk the dog"
+    },
+    {
+      "id": 2,
+      "name": "Get some pizza"
+    },
+    {
+      "name": "href",
+      "id": 3
+    },
+    {
+      "name": "vv",
+      "id": 4
+    },
+    {
+      "name": "rrr",
+      "id": 5
+    },
+    {
+      "name": "vvvv",
+      "id": 6
+    },
+    {
+      "name": "ss",
+      "id": 7
+    }
+  ],
+  "dash": [
+    {
+      "roles": [],
+      "eliseStructureElements": [],
+      "grades": [
+        2
+      ],
+      "position": 0,
+      "dashboardId": "e10416ad-e9db-4b2e-b6bb-643d96cf046b",
+      "name": "Accueil Manager",
+      "description": "",
+      "owner": {
+        "uid": "d71ac14b1b2cd144b712102c0f4a6e59",
+        "label": "AdminGED",
+        "type": 0,
+        "email": "adminged@mail.local",
+        "isExternal": false,
+        "delegationId": null,
+        "isUnknown": false,
+        "absenceStartDate": null,
+        "absenceEndDate": null,
+        "isAutomaton": false
+      },
+      "creationDate": "2021-09-06T08:34:24.523Z",
+      "modificationDate": "2021-09-06T09:20:37.997Z",
+      "modifiedBy": {
+        "uid": "d71ac14b1b2cd144b712102c0f4a6e59",
+        "label": "AdminGED",
+        "type": 0,
+        "email": "adminged@mail.local",
+        "isExternal": false,
+        "delegationId": null,
+        "isUnknown": false,
+        "absenceStartDate": null,
+        "absenceEndDate": null,
+        "isAutomaton": false
+      },
+      "dashboardProperties": [],
+      "widgetInstances": [
+        {
+          "widgetId": "8420ff21-0824-4c14-82e7-15ca8b696d62",
+          "dashboardId": "e10416ad-e9db-4b2e-b6bb-643d96cf046b",
+          "name": "Counter",
+          "description": null,
+          "icon": null,
+          "widgetType": "counter",
+          "column": 1,
+          "row": 0,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "b03609624cff684e8bb690ae60ec3964",
+          "creationDate": "2021-01-25T09:28:38.653Z",
+          "modificationDate": "2021-02-01T10:51:01.427Z",
+          "widgetParameters": [
+            {
+              "widgetId": "8420ff21-0824-4c14-82e7-15ca8b696d62",
+              "name": "dataSource",
+              "value": "{\"source\":\"activity\",\"id\":\"FOLDER_ENCOURS_54\"}"
+            },
+            {
+              "widgetId": "8420ff21-0824-4c14-82e7-15ca8b696d62",
+              "name": "icon",
+              "value": "\"folder-open-o\""
+            },
+            {
+              "widgetId": "8420ff21-0824-4c14-82e7-15ca8b696d62",
+              "name": "intervals",
+              "value": "[{\"bgColor\":\"#FFFFFF\",\"color\":\"#0C797D\"}]"
+            },
+            {
+              "widgetId": "8420ff21-0824-4c14-82e7-15ca8b696d62",
+              "name": "title",
+              "value": "\"En cours de traitement\""
+            }
+          ]
+        },
+        {
+          "widgetId": "d0c3b995-3d81-4116-8d04-1fa5013989a4",
+          "dashboardId": "e10416ad-e9db-4b2e-b6bb-643d96cf046b",
+          "name": "New Document",
+          "description": null,
+          "icon": null,
+          "widgetType": "documentCreation",
+          "column": 5,
+          "row": 1,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "b03609624cff684e8bb690ae60ec3964",
+          "creationDate": "2021-03-15T10:18:18.22Z",
+          "modificationDate": "2021-09-06T09:08:10.94Z",
+          "widgetParameters": [
+            {
+              "widgetId": "d0c3b995-3d81-4116-8d04-1fa5013989a4",
+              "name": "attachmentRequired",
+              "value": "false"
+            },
+            {
+              "widgetId": "d0c3b995-3d81-4116-8d04-1fa5013989a4",
+              "name": "openCreatedDocument",
+              "value": "true"
+            },
+            {
+              "widgetId": "d0c3b995-3d81-4116-8d04-1fa5013989a4",
+              "name": "text",
+              "value": null
+            },
+            {
+              "widgetId": "d0c3b995-3d81-4116-8d04-1fa5013989a4",
+              "name": "title",
+              "value": "\"Document sortant\""
+            },
+            {
+              "widgetId": "d0c3b995-3d81-4116-8d04-1fa5013989a4",
+              "name": "workflowDocumentType",
+              "value": "{\"documentType\":\"COURRIERS_TYPE_2\",\"addPreProcessTask\":true}"
+            },
+            {
+              "widgetId": "d0c3b995-3d81-4116-8d04-1fa5013989a4",
+              "name": "directionType",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "widgetId": "132fbca0-fee5-4f34-9bce-202d64830663",
+          "dashboardId": "e10416ad-e9db-4b2e-b6bb-643d96cf046b",
+          "name": "Counter",
+          "description": null,
+          "icon": null,
+          "widgetType": "counter",
+          "column": 3,
+          "row": 0,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "b03609624cff684e8bb690ae60ec3964",
+          "creationDate": "2021-01-25T09:28:42.03Z",
+          "modificationDate": "2021-02-23T12:50:05.49Z",
+          "widgetParameters": [
+            {
+              "widgetId": "132fbca0-fee5-4f34-9bce-202d64830663",
+              "name": "dataSource",
+              "value": "{\"source\":\"activity\",\"id\":\"SOCLE_ELISE6_SIGNATURE\"}"
+            },
+            {
+              "widgetId": "132fbca0-fee5-4f34-9bce-202d64830663",
+              "name": "icon",
+              "value": "\"edit\""
+            },
+            {
+              "widgetId": "132fbca0-fee5-4f34-9bce-202d64830663",
+              "name": "intervals",
+              "value": "[{\"bgColor\":\"#FFFFFF\",\"color\":\"#0062B1\"}]"
+            },
+            {
+              "widgetId": "132fbca0-fee5-4f34-9bce-202d64830663",
+              "name": "title",
+              "value": "\"A signer\""
+            }
+          ]
+        },
+        {
+          "widgetId": "3bcd9e62-d7f3-44a5-85cc-403dbd3c6d3b",
+          "dashboardId": "e10416ad-e9db-4b2e-b6bb-643d96cf046b",
+          "name": "Task list",
+          "description": null,
+          "icon": null,
+          "widgetType": "taskList",
+          "column": 0,
+          "row": 1,
+          "colspan": 3,
+          "rowspan": 3,
+          "shared": true,
+          "system": false,
+          "owner": "b03609624cff684e8bb690ae60ec3964",
+          "creationDate": "2021-01-25T13:12:41.1Z",
+          "modificationDate": "2021-01-25T13:12:45.443Z",
+          "widgetParameters": [
+            {
+              "widgetId": "3bcd9e62-d7f3-44a5-85cc-403dbd3c6d3b",
+              "name": "limit",
+              "value": "10"
+            },
+            {
+              "widgetId": "3bcd9e62-d7f3-44a5-85cc-403dbd3c6d3b",
+              "name": "title",
+              "value": "\"Liste des tâches\""
+            }
+          ]
+        },
+        {
+          "widgetId": "c532230b-b0cf-4479-b33a-4ae2f37887e6",
+          "dashboardId": "e10416ad-e9db-4b2e-b6bb-643d96cf046b",
+          "name": "Counter",
+          "description": null,
+          "icon": null,
+          "widgetType": "counter",
+          "column": 2,
+          "row": 0,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "b03609624cff684e8bb690ae60ec3964",
+          "creationDate": "2021-01-25T09:28:40.59Z",
+          "modificationDate": "2021-02-23T12:47:29.947Z",
+          "widgetParameters": [
+            {
+              "widgetId": "c532230b-b0cf-4479-b33a-4ae2f37887e6",
+              "name": "dataSource",
+              "value": "{\"source\":\"activity\",\"id\":\"SOCLE_ELISE6_VALIDATION\"}"
+            },
+            {
+              "widgetId": "c532230b-b0cf-4479-b33a-4ae2f37887e6",
+              "name": "icon",
+              "value": "\"check\""
+            },
+            {
+              "widgetId": "c532230b-b0cf-4479-b33a-4ae2f37887e6",
+              "name": "intervals",
+              "value": "[{\"bgColor\":\"#FFFFFF\",\"color\":\"#653294\"}]"
+            },
+            {
+              "widgetId": "c532230b-b0cf-4479-b33a-4ae2f37887e6",
+              "name": "title",
+              "value": "\"A valider\""
+            }
+          ]
+        },
+        {
+          "widgetId": "f9f2a5b9-378e-4bff-b39c-549c38a6f475",
+          "dashboardId": "e10416ad-e9db-4b2e-b6bb-643d96cf046b",
+          "name": "Note",
+          "description": null,
+          "icon": null,
+          "widgetType": "note",
+          "column": 7,
+          "row": 1,
+          "colspan": 2,
+          "rowspan": 3,
+          "shared": true,
+          "system": false,
+          "owner": "b03609624cff684e8bb690ae60ec3964",
+          "creationDate": "2021-03-15T10:34:04.973Z",
+          "modificationDate": "2021-03-15T13:57:33.147Z",
+          "widgetParameters": [
+            {
+              "widgetId": "f9f2a5b9-378e-4bff-b39c-549c38a6f475",
+              "name": "color",
+              "value": "\"#FFFFFF\""
+            },
+            {
+              "widgetId": "f9f2a5b9-378e-4bff-b39c-549c38a6f475",
+              "name": "text",
+              "value": "\"<p>Bonjour à tous,</p><p><br></p><p>Bienvenue sur la plateforme socle de Neoledge !</p><p><br></p><p>Nouvelle version d'Elise déployée ce week-end. Pour tout savoir cliquer <a href=\\\"https://illicoprelude.illico.city/elise/docs/userguide/fr-fr/GBL-Topics/GBL-AccueilPageWeb.htm\\\" rel=\\\"noopener noreferrer\\\" target=\\\"_blank\\\">ICI</a></p><p><br></p><p>Nouvelle formation utilisateur le 1/04 !!</p><p><br></p>\""
+            },
+            {
+              "widgetId": "f9f2a5b9-378e-4bff-b39c-549c38a6f475",
+              "name": "title",
+              "value": "\"Actualités\""
+            }
+          ]
+        },
+        {
+          "widgetId": "5ffbfe51-2b62-40b1-8694-6cce3736b4b5",
+          "dashboardId": "e10416ad-e9db-4b2e-b6bb-643d96cf046b",
+          "name": "Shortcut",
+          "description": null,
+          "icon": null,
+          "widgetType": "shortcut",
+          "column": 7,
+          "row": 0,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "b03609624cff684e8bb690ae60ec3964",
+          "creationDate": "2021-03-15T10:24:23.947Z",
+          "modificationDate": "2021-09-06T09:20:37.963Z",
+          "widgetParameters": [
+            {
+              "widgetId": "5ffbfe51-2b62-40b1-8694-6cce3736b4b5",
+              "name": "icon",
+              "value": "\"folder-open-o\""
+            },
+            {
+              "widgetId": "5ffbfe51-2b62-40b1-8694-6cce3736b4b5",
+              "name": "intervals",
+              "value": "[{\"bgColor\":\"#FFFFFF\",\"color\":\"#0062B1\"}]"
+            },
+            {
+              "widgetId": "5ffbfe51-2b62-40b1-8694-6cce3736b4b5",
+              "name": "text",
+              "value": null
+            },
+            {
+              "widgetId": "5ffbfe51-2b62-40b1-8694-6cce3736b4b5",
+              "name": "title",
+              "value": "\"Documentation\""
+            },
+            {
+              "widgetId": "5ffbfe51-2b62-40b1-8694-6cce3736b4b5",
+              "name": "url",
+              "value": "\"https://elise6-2021-r2.elisedemo.com/elise/docs/userguide/fr-fr/GBL-Topics/GBL-AccueilPageWeb.htm\""
+            }
+          ]
+        },
+        {
+          "widgetId": "481a6112-7849-4f79-a5ba-893382cfb037",
+          "dashboardId": "e10416ad-e9db-4b2e-b6bb-643d96cf046b",
+          "name": "Shortcut",
+          "description": null,
+          "icon": null,
+          "widgetType": "shortcut",
+          "column": 8,
+          "row": 0,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "b03609624cff684e8bb690ae60ec3964",
+          "creationDate": "2021-03-16T11:34:37.677Z",
+          "modificationDate": "2021-03-18T15:35:25.273Z",
+          "widgetParameters": [
+            {
+              "widgetId": "481a6112-7849-4f79-a5ba-893382cfb037",
+              "name": "icon",
+              "value": "\"cloud\""
+            },
+            {
+              "widgetId": "481a6112-7849-4f79-a5ba-893382cfb037",
+              "name": "intervals",
+              "value": "[{\"bgColor\":\"#FFFFFF\",\"color\":\"#0062B1\"}]"
+            },
+            {
+              "widgetId": "481a6112-7849-4f79-a5ba-893382cfb037",
+              "name": "title",
+              "value": "\"Intranet\""
+            },
+            {
+              "widgetId": "481a6112-7849-4f79-a5ba-893382cfb037",
+              "name": "url",
+              "value": "\"https://www.neoledge.com/fr/\""
+            }
+          ]
+        },
+        {
+          "widgetId": "3d32dc6e-2796-4f60-a301-96b37d2c51ba",
+          "dashboardId": "e10416ad-e9db-4b2e-b6bb-643d96cf046b",
+          "name": "Chart",
+          "description": null,
+          "icon": null,
+          "widgetType": "chart",
+          "column": 5,
+          "row": 2,
+          "colspan": 2,
+          "rowspan": 2,
+          "shared": true,
+          "system": false,
+          "owner": "b03609624cff684e8bb690ae60ec3964",
+          "creationDate": "2021-02-02T09:21:22.43Z",
+          "modificationDate": "2021-02-11T14:42:34.793Z",
+          "widgetParameters": [
+            {
+              "widgetId": "3d32dc6e-2796-4f60-a301-96b37d2c51ba",
+              "name": "date",
+              "value": "false"
+            },
+            {
+              "widgetId": "3d32dc6e-2796-4f60-a301-96b37d2c51ba",
+              "name": "key",
+              "value": "\"0\""
+            },
+            {
+              "widgetId": "3d32dc6e-2796-4f60-a301-96b37d2c51ba",
+              "name": "legend",
+              "value": "false"
+            },
+            {
+              "widgetId": "3d32dc6e-2796-4f60-a301-96b37d2c51ba",
+              "name": "sortId",
+              "value": "\"SOCLE_TRI_CP_DELAI\""
+            },
+            {
+              "widgetId": "3d32dc6e-2796-4f60-a301-96b37d2c51ba",
+              "name": "title",
+              "value": "\"Délai de traitement\""
+            },
+            {
+              "widgetId": "3d32dc6e-2796-4f60-a301-96b37d2c51ba",
+              "name": "type",
+              "value": "\"chart-line\""
+            }
+          ]
+        },
+        {
+          "widgetId": "6cc79e01-f45a-4e44-9d91-a89e750f8d24",
+          "dashboardId": "e10416ad-e9db-4b2e-b6bb-643d96cf046b",
+          "name": "Classification tree view",
+          "description": null,
+          "icon": null,
+          "widgetType": "classificationTreeView",
+          "column": 3,
+          "row": 1,
+          "colspan": 2,
+          "rowspan": 3,
+          "shared": true,
+          "system": false,
+          "owner": "b03609624cff684e8bb690ae60ec3964",
+          "creationDate": "2021-01-25T09:26:27.943Z",
+          "modificationDate": "2021-02-02T09:09:32.063Z",
+          "widgetParameters": [
+            {
+              "widgetId": "6cc79e01-f45a-4e44-9d91-a89e750f8d24",
+              "name": "dynamicViewData",
+              "value": "{\"value\":\"PLAN_CLASSEMENT\",\"label\":\"Plan de classement\",\"type\":\"GROUP\"}"
+            },
+            {
+              "widgetId": "6cc79e01-f45a-4e44-9d91-a89e750f8d24",
+              "name": "title",
+              "value": "\"Classement : \""
+            }
+          ]
+        },
+        {
+          "widgetId": "0db27e19-51e1-4470-bf59-b454c024932c",
+          "dashboardId": "e10416ad-e9db-4b2e-b6bb-643d96cf046b",
+          "name": "Counter",
+          "description": null,
+          "icon": null,
+          "widgetType": "counter",
+          "column": 0,
+          "row": 0,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "b03609624cff684e8bb690ae60ec3964",
+          "creationDate": "2021-01-25T09:28:36.893Z",
+          "modificationDate": "2021-03-18T15:58:51.947Z",
+          "widgetParameters": [
+            {
+              "widgetId": "0db27e19-51e1-4470-bf59-b454c024932c",
+              "name": "dataSource",
+              "value": "{\"source\":\"activity\",\"id\":\"FOLDER_NOUVEAU_54\"}"
+            },
+            {
+              "widgetId": "0db27e19-51e1-4470-bf59-b454c024932c",
+              "name": "icon",
+              "value": "\"envelope-open-o\""
+            },
+            {
+              "widgetId": "0db27e19-51e1-4470-bf59-b454c024932c",
+              "name": "intervals",
+              "value": "[{\"bgColor\":\"#FFFFFF\",\"color\":\"#68BC00\"}]"
+            },
+            {
+              "widgetId": "0db27e19-51e1-4470-bf59-b454c024932c",
+              "name": "title",
+              "value": "\"Nouveaux\""
+            }
+          ]
+        },
+        {
+          "widgetId": "53471ef5-0939-4a2c-9cd2-bf8904148c00",
+          "dashboardId": "e10416ad-e9db-4b2e-b6bb-643d96cf046b",
+          "name": "Counter",
+          "description": null,
+          "icon": null,
+          "widgetType": "counter",
+          "column": 6,
+          "row": 0,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "2bcf725bff64d44da6434ad857ca8991",
+          "creationDate": "2021-03-15T13:57:45.883Z",
+          "modificationDate": "2021-03-17T09:35:40.163Z",
+          "widgetParameters": [
+            {
+              "widgetId": "53471ef5-0939-4a2c-9cd2-bf8904148c00",
+              "name": "dataSource",
+              "value": "{\"source\":\"favorite\",\"id\":\"\"}"
+            },
+            {
+              "widgetId": "53471ef5-0939-4a2c-9cd2-bf8904148c00",
+              "name": "icon",
+              "value": "\"star-o\""
+            },
+            {
+              "widgetId": "53471ef5-0939-4a2c-9cd2-bf8904148c00",
+              "name": "intervals",
+              "value": "[{\"bgColor\":\"#FFFFFF\",\"color\":\"#FB9E00\"}]"
+            },
+            {
+              "widgetId": "53471ef5-0939-4a2c-9cd2-bf8904148c00",
+              "name": "title",
+              "value": "\"Favoris\""
+            }
+          ]
+        },
+        {
+          "widgetId": "556a9cd9-275e-45c0-9c15-dbd7c8fafeee",
+          "dashboardId": "e10416ad-e9db-4b2e-b6bb-643d96cf046b",
+          "name": "Counter",
+          "description": null,
+          "icon": null,
+          "widgetType": "counter",
+          "column": 4,
+          "row": 0,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "b03609624cff684e8bb690ae60ec3964",
+          "creationDate": "2021-01-25T09:28:43.313Z",
+          "modificationDate": "2021-02-23T11:25:10.26Z",
+          "widgetParameters": [
+            {
+              "widgetId": "556a9cd9-275e-45c0-9c15-dbd7c8fafeee",
+              "name": "dataSource",
+              "value": "{\"source\":\"activity\",\"id\":\"SOCLE_ELISE6_RETARD\"}"
+            },
+            {
+              "widgetId": "556a9cd9-275e-45c0-9c15-dbd7c8fafeee",
+              "name": "icon",
+              "value": "\"clock-o\""
+            },
+            {
+              "widgetId": "556a9cd9-275e-45c0-9c15-dbd7c8fafeee",
+              "name": "intervals",
+              "value": "[{\"bgColor\":\"#FFFFFF\",\"color\":\"#9F0500\"}]"
+            },
+            {
+              "widgetId": "556a9cd9-275e-45c0-9c15-dbd7c8fafeee",
+              "name": "title",
+              "value": "\"En retard\""
+            }
+          ]
+        },
+        {
+          "widgetId": "93439f51-6608-4c6b-949a-ee7d1acc5a40",
+          "dashboardId": "e10416ad-e9db-4b2e-b6bb-643d96cf046b",
+          "name": "Counter",
+          "description": null,
+          "icon": null,
+          "widgetType": "counter",
+          "column": 5,
+          "row": 0,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "b03609624cff684e8bb690ae60ec3964",
+          "creationDate": "2021-03-15T10:18:12.45Z",
+          "modificationDate": "2021-03-15T10:22:20.08Z",
+          "widgetParameters": [
+            {
+              "widgetId": "93439f51-6608-4c6b-949a-ee7d1acc5a40",
+              "name": "dataSource",
+              "value": "{\"source\":\"activity\",\"id\":\"SOCLE_ELISE6_DOCUMENT_DU_JOUR\"}"
+            },
+            {
+              "widgetId": "93439f51-6608-4c6b-949a-ee7d1acc5a40",
+              "name": "icon",
+              "value": "\"calendar\""
+            },
+            {
+              "widgetId": "93439f51-6608-4c6b-949a-ee7d1acc5a40",
+              "name": "intervals",
+              "value": "[{\"bgColor\":\"#FFFFFF\",\"color\":\"#FB9E00\"}]"
+            },
+            {
+              "widgetId": "93439f51-6608-4c6b-949a-ee7d1acc5a40",
+              "name": "title",
+              "value": "\"Documents du jour\""
+            }
+          ]
+        },
+        {
+          "widgetId": "79122718-0b59-4a59-a12b-f5f059b54928",
+          "dashboardId": "e10416ad-e9db-4b2e-b6bb-643d96cf046b",
+          "name": "New Document",
+          "description": null,
+          "icon": null,
+          "widgetType": "documentCreation",
+          "column": 6,
+          "row": 1,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "b03609624cff684e8bb690ae60ec3964",
+          "creationDate": "2021-03-15T10:18:19.427Z",
+          "modificationDate": "2021-09-06T09:11:52.913Z",
+          "widgetParameters": [
+            {
+              "widgetId": "79122718-0b59-4a59-a12b-f5f059b54928",
+              "name": "attachmentRequired",
+              "value": "false"
+            },
+            {
+              "widgetId": "79122718-0b59-4a59-a12b-f5f059b54928",
+              "name": "openCreatedDocument",
+              "value": "true"
+            },
+            {
+              "widgetId": "79122718-0b59-4a59-a12b-f5f059b54928",
+              "name": "text",
+              "value": null
+            },
+            {
+              "widgetId": "79122718-0b59-4a59-a12b-f5f059b54928",
+              "name": "title",
+              "value": "\"Document interne\""
+            },
+            {
+              "widgetId": "79122718-0b59-4a59-a12b-f5f059b54928",
+              "name": "workflowDocumentType",
+              "value": "{\"documentType\":\"COURRIERS_TYPE_3\",\"addPreProcessTask\":true}"
+            },
+            {
+              "widgetId": "79122718-0b59-4a59-a12b-f5f059b54928",
+              "name": "directionType",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "type": 2
+    },
+    {
+      "roles": [],
+      "eliseStructureElements": [],
+      "grades": [
+        2
+      ],
+      "position": 0,
+      "dashboardId": "7bf198f2-5a99-4e97-9662-355063bba2df",
+      "name": "Parapheur Manager",
+      "description": "",
+      "owner": {
+        "uid": "d71ac14b1b2cd144b712102c0f4a6e59",
+        "label": "AdminGED",
+        "type": 0,
+        "email": "adminged@mail.local",
+        "isExternal": false,
+        "delegationId": null,
+        "isUnknown": false,
+        "absenceStartDate": null,
+        "absenceEndDate": null,
+        "isAutomaton": false
+      },
+      "creationDate": "2021-09-06T08:34:26.323Z",
+      "modificationDate": "2021-09-06T09:16:06.523Z",
+      "modifiedBy": {
+        "uid": "d71ac14b1b2cd144b712102c0f4a6e59",
+        "label": "AdminGED",
+        "type": 0,
+        "email": "adminged@mail.local",
+        "isExternal": false,
+        "delegationId": null,
+        "isUnknown": false,
+        "absenceStartDate": null,
+        "absenceEndDate": null,
+        "isAutomaton": false
+      },
+      "dashboardProperties": [],
+      "widgetInstances": [
+        {
+          "widgetId": "58973f43-4e39-417c-be22-2b7567df916d",
+          "dashboardId": "7bf198f2-5a99-4e97-9662-355063bba2df",
+          "name": "Result list",
+          "description": null,
+          "icon": null,
+          "widgetType": "resultList",
+          "column": 0,
+          "row": 2,
+          "colspan": 3,
+          "rowspan": 2,
+          "shared": true,
+          "system": false,
+          "owner": "b03609624cff684e8bb690ae60ec3964",
+          "creationDate": "2021-01-25T09:46:35.867Z",
+          "modificationDate": "2021-02-23T12:49:48.973Z",
+          "widgetParameters": [
+            {
+              "widgetId": "58973f43-4e39-417c-be22-2b7567df916d",
+              "name": "dataSource",
+              "value": "{\"source\":\"activity\",\"id\":\"SOCLE_ELISE6_SIGNATURE\"}"
+            },
+            {
+              "widgetId": "58973f43-4e39-417c-be22-2b7567df916d",
+              "name": "detailLevel",
+              "value": "\"1\""
+            },
+            {
+              "widgetId": "58973f43-4e39-417c-be22-2b7567df916d",
+              "name": "title",
+              "value": "\"A signer\""
+            }
+          ]
+        },
+        {
+          "widgetId": "51022e5c-2ac7-4779-bd66-504b4206d18b",
+          "dashboardId": "7bf198f2-5a99-4e97-9662-355063bba2df",
+          "name": "Result list",
+          "description": null,
+          "icon": null,
+          "widgetType": "resultList",
+          "column": 0,
+          "row": 0,
+          "colspan": 3,
+          "rowspan": 2,
+          "shared": true,
+          "system": false,
+          "owner": "b03609624cff684e8bb690ae60ec3964",
+          "creationDate": "2021-01-25T09:46:33.02Z",
+          "modificationDate": "2021-02-23T12:47:49.623Z",
+          "widgetParameters": [
+            {
+              "widgetId": "51022e5c-2ac7-4779-bd66-504b4206d18b",
+              "name": "dataSource",
+              "value": "{\"source\":\"activity\",\"id\":\"SOCLE_ELISE6_VALIDATION\"}"
+            },
+            {
+              "widgetId": "51022e5c-2ac7-4779-bd66-504b4206d18b",
+              "name": "detailLevel",
+              "value": "1"
+            },
+            {
+              "widgetId": "51022e5c-2ac7-4779-bd66-504b4206d18b",
+              "name": "title",
+              "value": "\"A valider\""
+            }
+          ]
+        },
+        {
+          "widgetId": "290b7099-bc4a-4cda-a0bc-8c2f50959a44",
+          "dashboardId": "7bf198f2-5a99-4e97-9662-355063bba2df",
+          "name": "Counter",
+          "description": null,
+          "icon": null,
+          "widgetType": "counter",
+          "column": 3,
+          "row": 2,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "b03609624cff684e8bb690ae60ec3964",
+          "creationDate": "2021-01-25T09:48:24.68Z",
+          "modificationDate": "2021-02-23T12:49:38.363Z",
+          "widgetParameters": [
+            {
+              "widgetId": "290b7099-bc4a-4cda-a0bc-8c2f50959a44",
+              "name": "dataSource",
+              "value": "{\"source\":\"activity\",\"id\":\"SOCLE_ELISE6_SIGNATURE\"}"
+            },
+            {
+              "widgetId": "290b7099-bc4a-4cda-a0bc-8c2f50959a44",
+              "name": "icon",
+              "value": "\"edit\""
+            },
+            {
+              "widgetId": "290b7099-bc4a-4cda-a0bc-8c2f50959a44",
+              "name": "intervals",
+              "value": "[{\"bgColor\":\"#FFFFFF\",\"color\":\"#0062B1\"}]"
+            },
+            {
+              "widgetId": "290b7099-bc4a-4cda-a0bc-8c2f50959a44",
+              "name": "title",
+              "value": "\"A signer\""
+            }
+          ]
+        },
+        {
+          "widgetId": "ff38ac4b-af71-4601-b6f7-c0c97cec64cc",
+          "dashboardId": "7bf198f2-5a99-4e97-9662-355063bba2df",
+          "name": "Counter",
+          "description": null,
+          "icon": null,
+          "widgetType": "counter",
+          "column": 3,
+          "row": 0,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "b03609624cff684e8bb690ae60ec3964",
+          "creationDate": "2021-01-25T09:48:22.743Z",
+          "modificationDate": "2021-02-23T12:47:43.41Z",
+          "widgetParameters": [
+            {
+              "widgetId": "ff38ac4b-af71-4601-b6f7-c0c97cec64cc",
+              "name": "dataSource",
+              "value": "{\"source\":\"activity\",\"id\":\"SOCLE_ELISE6_VALIDATION\"}"
+            },
+            {
+              "widgetId": "ff38ac4b-af71-4601-b6f7-c0c97cec64cc",
+              "name": "icon",
+              "value": "\"check\""
+            },
+            {
+              "widgetId": "ff38ac4b-af71-4601-b6f7-c0c97cec64cc",
+              "name": "intervals",
+              "value": "[{\"bgColor\":\"#FFFFFF\",\"color\":\"#653294\"}]"
+            },
+            {
+              "widgetId": "ff38ac4b-af71-4601-b6f7-c0c97cec64cc",
+              "name": "title",
+              "value": "\"A valider\""
+            }
+          ]
+        }
+      ],
+      "type": 2
+    },
+    {
+      "roles": [
+        {
+          "id": 29,
+          "name": null,
+          "description": null,
+          "externalId": null
+        }
+      ],
+      "eliseStructureElements": [],
+      "grades": [],
+      "position": 0,
+      "dashboardId": "027052f1-b79c-4bfc-b940-7f1a61f40e78",
+      "name": "Suivi des demandes",
+      "description": "",
+      "owner": {
+        "uid": "d71ac14b1b2cd144b712102c0f4a6e59",
+        "label": "AdminGED",
+        "type": 0,
+        "email": "adminged@mail.local",
+        "isExternal": false,
+        "delegationId": null,
+        "isUnknown": false,
+        "absenceStartDate": null,
+        "absenceEndDate": null,
+        "isAutomaton": false
+      },
+      "creationDate": "2021-09-06T08:34:26.43Z",
+      "modificationDate": "2021-09-06T09:17:31.793Z",
+      "modifiedBy": {
+        "uid": "d71ac14b1b2cd144b712102c0f4a6e59",
+        "label": "AdminGED",
+        "type": 0,
+        "email": "adminged@mail.local",
+        "isExternal": false,
+        "delegationId": null,
+        "isUnknown": false,
+        "absenceStartDate": null,
+        "absenceEndDate": null,
+        "isAutomaton": false
+      },
+      "dashboardProperties": [],
+      "widgetInstances": [
+        {
+          "widgetId": "fdf31d0e-5b4b-45d8-87ee-38c6ac39c010",
+          "dashboardId": "027052f1-b79c-4bfc-b940-7f1a61f40e78",
+          "name": "Counter",
+          "description": null,
+          "icon": null,
+          "widgetType": "counter",
+          "column": 4,
+          "row": 0,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "b03609624cff684e8bb690ae60ec3964",
+          "creationDate": "2021-02-23T12:27:18.527Z",
+          "modificationDate": "2021-02-23T13:03:03.907Z",
+          "widgetParameters": [
+            {
+              "widgetId": "fdf31d0e-5b4b-45d8-87ee-38c6ac39c010",
+              "name": "dataSource",
+              "value": "{\"source\":\"activity\",\"id\":\"SOCLE_ELISE6_VALIDATION_ENCOURS\"}"
+            },
+            {
+              "widgetId": "fdf31d0e-5b4b-45d8-87ee-38c6ac39c010",
+              "name": "icon",
+              "value": "\"check\""
+            },
+            {
+              "widgetId": "fdf31d0e-5b4b-45d8-87ee-38c6ac39c010",
+              "name": "intervals",
+              "value": "[{\"bgColor\":\"#FFFFFF\",\"color\":\"#653294\"}]"
+            },
+            {
+              "widgetId": "fdf31d0e-5b4b-45d8-87ee-38c6ac39c010",
+              "name": "title",
+              "value": "\"En attente de validation\""
+            }
+          ]
+        },
+        {
+          "widgetId": "d9271c50-7bb1-49ac-af50-415b19171b64",
+          "dashboardId": "027052f1-b79c-4bfc-b940-7f1a61f40e78",
+          "name": "Counter",
+          "description": null,
+          "icon": null,
+          "widgetType": "counter",
+          "column": 4,
+          "row": 1,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "b03609624cff684e8bb690ae60ec3964",
+          "creationDate": "2021-02-23T12:27:19.997Z",
+          "modificationDate": "2021-02-23T12:31:33.493Z",
+          "widgetParameters": [
+            {
+              "widgetId": "d9271c50-7bb1-49ac-af50-415b19171b64",
+              "name": "dataSource",
+              "value": "{\"source\":\"activity\",\"id\":\"FOLDER_SUIVI_A_DECIDER_54\"}"
+            },
+            {
+              "widgetId": "d9271c50-7bb1-49ac-af50-415b19171b64",
+              "name": "icon",
+              "value": "\"user-o\""
+            },
+            {
+              "widgetId": "d9271c50-7bb1-49ac-af50-415b19171b64",
+              "name": "intervals",
+              "value": "[{\"bgColor\":\"#FFFFFF\",\"color\":\"#0C797D\"}]"
+            },
+            {
+              "widgetId": "d9271c50-7bb1-49ac-af50-415b19171b64",
+              "name": "title",
+              "value": "\"Suite à décider\""
+            }
+          ]
+        },
+        {
+          "widgetId": "f25f1e27-56a5-47e9-8a2f-5b0f75f6daae",
+          "dashboardId": "027052f1-b79c-4bfc-b940-7f1a61f40e78",
+          "name": "Counter",
+          "description": null,
+          "icon": null,
+          "widgetType": "counter",
+          "column": 5,
+          "row": 0,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "b03609624cff684e8bb690ae60ec3964",
+          "creationDate": "2021-02-23T12:27:19.323Z",
+          "modificationDate": "2021-02-23T12:30:30.017Z",
+          "widgetParameters": [
+            {
+              "widgetId": "f25f1e27-56a5-47e9-8a2f-5b0f75f6daae",
+              "name": "dataSource",
+              "value": "{\"source\":\"activity\",\"id\":\"SOCLE_ELISE6_SIGNATURE_ENCOURS\"}"
+            },
+            {
+              "widgetId": "f25f1e27-56a5-47e9-8a2f-5b0f75f6daae",
+              "name": "icon",
+              "value": "\"edit\""
+            },
+            {
+              "widgetId": "f25f1e27-56a5-47e9-8a2f-5b0f75f6daae",
+              "name": "intervals",
+              "value": "[{\"bgColor\":\"#FFFFFF\",\"color\":\"#0062B1\"}]"
+            },
+            {
+              "widgetId": "f25f1e27-56a5-47e9-8a2f-5b0f75f6daae",
+              "name": "title",
+              "value": "\"En attente de signature\""
+            }
+          ]
+        },
+        {
+          "widgetId": "7e905cba-3b15-40d4-ab98-6fa906ff29ee",
+          "dashboardId": "027052f1-b79c-4bfc-b940-7f1a61f40e78",
+          "name": "Result list",
+          "description": null,
+          "icon": null,
+          "widgetType": "resultList",
+          "column": 0,
+          "row": 2,
+          "colspan": 4,
+          "rowspan": 2,
+          "shared": true,
+          "system": false,
+          "owner": "b03609624cff684e8bb690ae60ec3964",
+          "creationDate": "2021-02-23T12:27:17.293Z",
+          "modificationDate": "2021-02-23T12:29:10.22Z",
+          "widgetParameters": [
+            {
+              "widgetId": "7e905cba-3b15-40d4-ab98-6fa906ff29ee",
+              "name": "dataSource",
+              "value": "{\"source\":\"activity\",\"id\":\"SOCLE_ELISE6_ETAT_DEMANDEUR_INPROGRESS\"}"
+            },
+            {
+              "widgetId": "7e905cba-3b15-40d4-ab98-6fa906ff29ee",
+              "name": "detailLevel",
+              "value": "1"
+            },
+            {
+              "widgetId": "7e905cba-3b15-40d4-ab98-6fa906ff29ee",
+              "name": "title",
+              "value": "\"Mes demandes en cours\""
+            }
+          ]
+        },
+        {
+          "widgetId": "e4f1bd78-f0cd-4fa1-9b4b-8b2fac44dcb9",
+          "dashboardId": "027052f1-b79c-4bfc-b940-7f1a61f40e78",
+          "name": "Classification tree view",
+          "description": null,
+          "icon": null,
+          "widgetType": "classificationTreeView",
+          "column": 4,
+          "row": 2,
+          "colspan": 2,
+          "rowspan": 2,
+          "shared": true,
+          "system": false,
+          "owner": "b03609624cff684e8bb690ae60ec3964",
+          "creationDate": "2021-02-23T12:27:23.483Z",
+          "modificationDate": "2021-02-23T12:27:41.547Z",
+          "widgetParameters": [
+            {
+              "widgetId": "e4f1bd78-f0cd-4fa1-9b4b-8b2fac44dcb9",
+              "name": "dynamicViewData",
+              "value": "{\"value\":\"2021241416190\",\"label\":\"Etat de mes demandes\",\"type\":\"GROUP\"}"
+            },
+            {
+              "widgetId": "e4f1bd78-f0cd-4fa1-9b4b-8b2fac44dcb9",
+              "name": "title",
+              "value": "\"Etat de mes demandes\""
+            }
+          ]
+        },
+        {
+          "widgetId": "80794f1d-151f-4477-9373-b359d500455e",
+          "dashboardId": "027052f1-b79c-4bfc-b940-7f1a61f40e78",
+          "name": "Result list",
+          "description": null,
+          "icon": null,
+          "widgetType": "resultList",
+          "column": 0,
+          "row": 0,
+          "colspan": 4,
+          "rowspan": 2,
+          "shared": true,
+          "system": false,
+          "owner": "b03609624cff684e8bb690ae60ec3964",
+          "creationDate": "2021-02-23T12:27:15.937Z",
+          "modificationDate": "2021-02-23T12:28:19.87Z",
+          "widgetParameters": [
+            {
+              "widgetId": "80794f1d-151f-4477-9373-b359d500455e",
+              "name": "dataSource",
+              "value": "{\"source\":\"activity\",\"id\":\"FOLDER_SUIVI_COURRIERS_CREES_54\"}"
+            },
+            {
+              "widgetId": "80794f1d-151f-4477-9373-b359d500455e",
+              "name": "detailLevel",
+              "value": "1"
+            },
+            {
+              "widgetId": "80794f1d-151f-4477-9373-b359d500455e",
+              "name": "title",
+              "value": "\"Mes documents créés\""
+            }
+          ]
+        },
+        {
+          "widgetId": "e7f02d32-36d5-4d1e-b59f-ed497c4680c1",
+          "dashboardId": "027052f1-b79c-4bfc-b940-7f1a61f40e78",
+          "name": "Counter",
+          "description": null,
+          "icon": null,
+          "widgetType": "counter",
+          "column": 5,
+          "row": 1,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "b03609624cff684e8bb690ae60ec3964",
+          "creationDate": "2021-02-23T12:27:20.81Z",
+          "modificationDate": "2021-02-23T12:44:44.817Z",
+          "widgetParameters": [
+            {
+              "widgetId": "e7f02d32-36d5-4d1e-b59f-ed497c4680c1",
+              "name": "dataSource",
+              "value": "{\"source\":\"activity\",\"id\":\"SOCLE_ELISE6_CLOS_J31\"}"
+            },
+            {
+              "widgetId": "e7f02d32-36d5-4d1e-b59f-ed497c4680c1",
+              "name": "icon",
+              "value": "\"archive\""
+            },
+            {
+              "widgetId": "e7f02d32-36d5-4d1e-b59f-ed497c4680c1",
+              "name": "intervals",
+              "value": "[{\"bgColor\":\"#FFFFFF\",\"color\":\"#808080\"}]"
+            },
+            {
+              "widgetId": "e7f02d32-36d5-4d1e-b59f-ed497c4680c1",
+              "name": "title",
+              "value": "\"Clôturés du mois\""
+            }
+          ]
+        }
+      ],
+      "type": 2
+    }
+  ],
+  "workspace": [
+    {
+      "defaultWorkspace": {
+        "workspaceId": "e5720509-1cb8-41f0-beae-50d9bb48d944",
+        "name": "AdminGED",
+        "self": true,
+        "default": true,
+        "creationDate": "2021-08-30T10:00:11.627Z",
+        "modificationDate": "2021-08-30T10:00:11.627Z",
+        "flowchartItemInChargeOfDocuments": {
+          "uid": "d71ac14b1b2cd144b712102c0f4a6e59",
+          "label": "AdminGED",
+          "type": 0,
+          "email": "adminged@mail.local",
+          "isExternal": false,
+          "delegationId": null,
+          "isUnknown": false,
+          "absenceStartDate": null,
+          "absenceEndDate": null,
+          "isAutomaton": false
+        },
+        "flowchartItemRequester": {
+          "uid": "d71ac14b1b2cd144b712102c0f4a6e59",
+          "label": "AdminGED",
+          "type": 0,
+          "email": "adminged@mail.local",
+          "isExternal": false,
+          "delegationId": null,
+          "isUnknown": false,
+          "absenceStartDate": null,
+          "absenceEndDate": null,
+          "isAutomaton": false
+        },
+        "workspaceContent": [
+          {
+            "uid": "d71ac14b1b2cd144b712102c0f4a6e59",
+            "label": "AdminGED",
+            "type": 0,
+            "email": "adminged@mail.local",
+            "isExternal": false,
+            "delegationId": null,
+            "isUnknown": false,
+            "absenceStartDate": null,
+            "absenceEndDate": null,
+            "isAutomaton": false
+          },
+          {
+            "uid": "LEXICON_00000000",
+            "label": "Elise City",
+            "type": 1,
+            "email": "",
+            "isExternal": false,
+            "delegationId": null,
+            "isUnknown": false,
+            "absenceStartDate": null,
+            "absenceEndDate": null,
+            "isAutomaton": false
+          }
+        ],
+        "canEditWorkspace": true,
+        "canDeleteWorkspace": false,
+        "canEditWorkspaceName": false,
+        "canEditFlowchartItemInChargeOfDocuments": true,
+        "canEditFlowchartItemIdRequester": false,
+        "canEditWorkspaceScope": false,
+        "workspaceScopesUsersCount": 1,
+        "workspaceScopesServiceCount": 1
+      },
+      "userWorkspaces": [
+        {
+          "workspaceId": "d2b1ef43-77a0-497f-928d-28a5b35d8c49",
+          "name": "AdminGED",
+          "self": false,
+          "default": false,
+          "creationDate": "2021-10-18T15:32:51.11Z",
+          "modificationDate": "2021-10-18T15:32:51.11Z",
+          "flowchartItemInChargeOfDocuments": {
+            "uid": "d71ac14b1b2cd144b712102c0f4a6e59",
+            "label": "AdminGED",
+            "type": 0,
+            "email": "adminged@mail.local",
+            "isExternal": false,
+            "delegationId": null,
+            "isUnknown": false,
+            "absenceStartDate": null,
+            "absenceEndDate": null,
+            "isAutomaton": false
+          },
+          "flowchartItemRequester": {
+            "uid": "d71ac14b1b2cd144b712102c0f4a6e59",
+            "label": "AdminGED",
+            "type": 0,
+            "email": "adminged@mail.local",
+            "isExternal": false,
+            "delegationId": null,
+            "isUnknown": false,
+            "absenceStartDate": null,
+            "absenceEndDate": null,
+            "isAutomaton": false
+          },
+          "workspaceContent": [
+            {
+              "uid": "d71ac14b1b2cd144b712102c0f4a6e59",
+              "label": "AdminGED",
+              "type": 0,
+              "email": "adminged@mail.local",
+              "isExternal": false,
+              "delegationId": null,
+              "isUnknown": false,
+              "absenceStartDate": null,
+              "absenceEndDate": null,
+              "isAutomaton": false
+            }
+          ],
+          "canEditWorkspace": true,
+          "canDeleteWorkspace": true,
+          "canEditWorkspaceName": true,
+          "canEditFlowchartItemInChargeOfDocuments": true,
+          "canEditFlowchartItemIdRequester": false,
+          "canEditWorkspaceScope": true,
+          "workspaceScopesUsersCount": 1,
+          "workspaceScopesServiceCount": 0
+        },
+        {
+          "workspaceId": "25953583-d914-43c2-aa2b-ef76022561a2",
+          "name": "Service EliseCity",
+          "self": false,
+          "default": false,
+          "creationDate": "2022-02-11T10:14:05.173Z",
+          "modificationDate": "2022-02-11T10:14:05.173Z",
+          "flowchartItemInChargeOfDocuments": {
+            "uid": "d71ac14b1b2cd144b712102c0f4a6e59",
+            "label": "AdminGED",
+            "type": 0,
+            "email": "adminged@mail.local",
+            "isExternal": false,
+            "delegationId": null,
+            "isUnknown": false,
+            "absenceStartDate": null,
+            "absenceEndDate": null,
+            "isAutomaton": false
+          },
+          "flowchartItemRequester": {
+            "uid": "d71ac14b1b2cd144b712102c0f4a6e59",
+            "label": "AdminGED",
+            "type": 0,
+            "email": "adminged@mail.local",
+            "isExternal": false,
+            "delegationId": null,
+            "isUnknown": false,
+            "absenceStartDate": null,
+            "absenceEndDate": null,
+            "isAutomaton": false
+          },
+          "workspaceContent": [
+            {
+              "uid": "LEXICON_00000000",
+              "label": "Elise City",
+              "type": 1,
+              "email": "",
+              "isExternal": false,
+              "delegationId": null,
+              "isUnknown": false,
+              "absenceStartDate": null,
+              "absenceEndDate": null,
+              "isAutomaton": false
+            }
+          ],
+          "canEditWorkspace": true,
+          "canDeleteWorkspace": true,
+          "canEditWorkspaceName": true,
+          "canEditFlowchartItemInChargeOfDocuments": true,
+          "canEditFlowchartItemIdRequester": false,
+          "canEditWorkspaceScope": true,
+          "workspaceScopesUsersCount": 0,
+          "workspaceScopesServiceCount": 1
+        }
+      ],
+      "serviceWorkspaces": []
+    }
+  ],
+  "user": [
+    {
+      "id": "d71ac14b1b2cd144b712102c0f4a6e59",
+      "displayName": "AdminGED",
+      "login": "AdminGED",
+      "cn": "AdminGED",
+      "mail": "adminged@mail.local",
+      "instanceName": "GED",
+      "preferences": null,
+      "preferredLanguage": "fr-FR",
+      "policies": {
+        "isAllowedToChangePortal": true,
+        "isAllowedToManageAbsence": true,
+        "hasDefaultLoginToModernPortal": true,
+        "canAccessToGrc": true,
+        "canAccessToGeneralAdministration": true,
+        "canAccessToContacts": true,
+        "canAccessToWorkflowAdministration": true,
+        "canAccessToSeparatorPrint": true,
+        "canAccessToMaintenance": true,
+        "canAccessToDocumentGeneration": true,
+        "canManageConfidentialFile": false,
+        "canAccessToDistribute": true,
+        "canShowMailHistory": true,
+        "canShowHistory": true,
+        "canAccessAdminGuide": true,
+        "canAddPersonalDashboard": true,
+        "canShowPreparationProcess": false,
+        "canManageWorkspaces": true,
+        "deleteTaskParameter": 1,
+        "updateTaskParameter": 1,
+        "canPermanentlyDeleteFiles": true,
+        "forceFormAuthentication": true,
+        "isAllowedToModifyAvatar": true,
+        "isAllowedToRequestTask": true,
+        "isAllowedToReserveDocument": true,
+        "isAllowedToPrintLabel": true,
+        "isAllowedToPrintDocument": true,
+        "isAllowedToLinkDocumentCreationWidgetToPigeonhole": true,
+        "isAllowedToRequestTaskAsService": false,
+        "isAllowedToAccessActivities": true,
+        "isAllowedToManageTasks": true,
+        "printBarCodeDateType": 0,
+        "notifyContributorOption": 4,
+        "isAllowedClosingLinkedOutgoingDocuments": 3,
+        "deactivateTransferredTask": 4,
+        "canAccessAdminAutomatedActions": true,
+        "canAccessFlowchartAllServices": true,
+        "canAccessFlowchartUserSubServices": true,
+        "canAccessFlowchartAllUsers": true,
+        "canAccessFlowchartUserServices": false
+      },
+      "eliseUrl": "https://elise6-pfe.elisedemo.com/elise",
+      "baseUrl": "https://elise6-pfe.elisedemo.com",
+      "documentationUrl": "https://elise6-pfe.elisedemo.com/elise/docs/userguide/{locale}/default.htm",
+      "isCf4InDebugMode": true,
+      "licenses": [
+        {
+          "license": {
+            "application": "ELISE",
+            "instance": "ged",
+            "availableLicenses": 1000,
+            "usedLicenses": 11,
+            "description": "Licences nommées pour l'application \"Elise\""
+          },
+          "isActive": true
+        },
+        {
+          "license": {
+            "application": "ELISEFLOW",
+            "instance": "ged",
+            "availableLicenses": 1000,
+            "usedLicenses": 1,
+            "description": "Licences nommées pour l'application \"Elise FLOW\""
+          },
+          "isActive": true
+        },
+        {
+          "license": {
+            "application": "ELISEFOROUTLOOK",
+            "instance": "ged",
+            "availableLicenses": 1000,
+            "usedLicenses": 1,
+            "description": "Licences nommées pour le complément Microsoft Outlook"
+          },
+          "isActive": true
+        }
+      ],
+      "isAdministrator": true,
+      "intranetAuthenticationMode": "FORM",
+      "services": [
+        {
+          "id": "LEXICON_00000000",
+          "isDefault": true,
+          "grade": 0,
+          "initials": "",
+          "identificationPath": "ENT1/GED",
+          "isOrganizationUnit": false,
+          "uid": "LEXICON_00000000",
+          "label": "Elise City",
+          "type": 1,
+          "email": null,
+          "isExternal": false,
+          "delegationId": null,
+          "isUnknown": false,
+          "absenceStartDate": null,
+          "absenceEndDate": null,
+          "isAutomaton": false
+        },
+        {
+          "id": "LEXICON_00000001",
+          "isDefault": false,
+          "grade": 0,
+          "initials": "",
+          "identificationPath": "ENT1/Courrier",
+          "isOrganizationUnit": false,
+          "uid": "LEXICON_00000001",
+          "label": "Service courrier centralisé",
+          "type": 1,
+          "email": null,
+          "isExternal": false,
+          "delegationId": null,
+          "isUnknown": false,
+          "absenceStartDate": null,
+          "absenceEndDate": null,
+          "isAutomaton": false
+        }
+      ],
+      "feature": {
+        "takeChargeOf": true,
+        "markAsSent": true,
+        "allTaskAreValidationStep": true,
+        "newTaskRequest": true,
+        "isProcessingWorkflowEnabledForOutMails": false,
+        "taskInProgress": true,
+        "diffusion": true,
+        "interEntitySecureMessage": true,
+        "userDocumentTemplate": false,
+        "elisePrintLabel": true,
+        "otherDiffusion": true,
+        "localDocumentation": true,
+        "historyDetails": true,
+        "entityManagement": true
+      },
+      "entityId": "LEXICON_00000000",
+      "rootServiceId": "LEXICON_00000000",
+      "documentExportLimit": 200
+    }
+  ],
+  "pers": [
+    {
+      "id": 1,
+      "dashboardId": "f61f7731-f693-4f09-ae82-53a56fd35a9c",
+      "name": "2022-R1 Nouveautés",
+      "description": "",
+      "owner": {
+        "uid": "d71ac14b1b2cd144b712102c0f4a6e59",
+        "label": null,
+        "type": 0,
+        "email": null,
+        "isExternal": false,
+        "delegationId": null,
+        "isUnknown": false,
+        "absenceStartDate": null,
+        "absenceEndDate": null,
+        "isAutomaton": false
+      },
+      "creationDate": "2021-08-30T10:00:47.377Z",
+      "modificationDate": "2022-03-08T08:03:29.79Z",
+      "modifiedBy": {
+        "uid": "d71ac14b1b2cd144b712102c0f4a6e59",
+        "label": null,
+        "type": 0,
+        "email": null,
+        "isExternal": false,
+        "delegationId": null,
+        "isUnknown": false,
+        "absenceStartDate": null,
+        "absenceEndDate": null,
+        "isAutomaton": false
+      },
+      "dashboardProperties": [],
+      "widgetInstances": [
+        {
+          "widgetId": "a1c53d83-834e-44bf-9d96-04ba119b4c45",
+          "dashboardId": "f61f7731-f693-4f09-ae82-53a56fd35a9c",
+          "name": "New Document",
+          "description": null,
+          "icon": null,
+          "widgetType": "documentCreation",
+          "column": 3,
+          "row": 2,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "d71ac14b1b2cd144b712102c0f4a6e59",
+          "creationDate": "2021-09-27T13:57:36.603Z",
+          "modificationDate": "2022-03-08T08:03:24.46Z",
+          "widgetParameters": [
+            {
+              "widgetId": "a1c53d83-834e-44bf-9d96-04ba119b4c45",
+              "name": "attachmentRequired",
+              "value": "false"
+            },
+            {
+              "widgetId": "a1c53d83-834e-44bf-9d96-04ba119b4c45",
+              "name": "openCreatedDocument",
+              "value": "true"
+            },
+            {
+              "widgetId": "a1c53d83-834e-44bf-9d96-04ba119b4c45",
+              "name": "text",
+              "value": null
+            },
+            {
+              "widgetId": "a1c53d83-834e-44bf-9d96-04ba119b4c45",
+              "name": "title",
+              "value": "\"Extern\""
+            },
+            {
+              "widgetId": "a1c53d83-834e-44bf-9d96-04ba119b4c45",
+              "name": "workflowDocumentType",
+              "value": "{\"documentType\":\"COURRIERS_TYPE_2\",\"addPreProcessTask\":true}"
+            }
+          ]
+        },
+        {
+          "widgetId": "a79818a4-39cf-40d4-b168-5c28dc932241",
+          "dashboardId": "f61f7731-f693-4f09-ae82-53a56fd35a9c",
+          "name": "Counter",
+          "description": null,
+          "icon": null,
+          "widgetType": "counter",
+          "column": 0,
+          "row": 3,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "d71ac14b1b2cd144b712102c0f4a6e59",
+          "creationDate": "2022-02-11T10:29:43.893Z",
+          "modificationDate": "2022-03-08T08:03:04.437Z",
+          "widgetParameters": [
+            {
+              "widgetId": "a79818a4-39cf-40d4-b168-5c28dc932241",
+              "name": "dataSource",
+              "value": "{\"source\":\"activity\",\"id\":\"FOLDER_NOUVEAU_54\"}"
+            },
+            {
+              "widgetId": "a79818a4-39cf-40d4-b168-5c28dc932241",
+              "name": "icon",
+              "value": "\"hashtag\""
+            },
+            {
+              "widgetId": "a79818a4-39cf-40d4-b168-5c28dc932241",
+              "name": "intervals",
+              "value": "[{\"bgColor\":\"#009CE0\",\"color\":\"#FFFFFF\"}]"
+            },
+            {
+              "widgetId": "a79818a4-39cf-40d4-b168-5c28dc932241",
+              "name": "text",
+              "value": null
+            },
+            {
+              "widgetId": "a79818a4-39cf-40d4-b168-5c28dc932241",
+              "name": "title",
+              "value": "\"Nouveaux\""
+            }
+          ]
+        },
+        {
+          "widgetId": "b01c45ec-55ef-41b1-82b2-79fa30826f98",
+          "dashboardId": "f61f7731-f693-4f09-ae82-53a56fd35a9c",
+          "name": "Result list",
+          "description": null,
+          "icon": null,
+          "widgetType": "resultList",
+          "column": 1,
+          "row": 0,
+          "colspan": 4,
+          "rowspan": 2,
+          "shared": true,
+          "system": false,
+          "owner": "d71ac14b1b2cd144b712102c0f4a6e59",
+          "creationDate": "2021-10-18T15:33:06.697Z",
+          "modificationDate": "2022-03-08T08:03:28.067Z",
+          "widgetParameters": [
+            {
+              "widgetId": "b01c45ec-55ef-41b1-82b2-79fa30826f98",
+              "name": "dataSource",
+              "value": "{\"source\":\"activity\",\"id\":\"FOLDER_SUIVI_COURRIERS_CREES_54\"}"
+            },
+            {
+              "widgetId": "b01c45ec-55ef-41b1-82b2-79fa30826f98",
+              "name": "detailLevel",
+              "value": "1"
+            },
+            {
+              "widgetId": "b01c45ec-55ef-41b1-82b2-79fa30826f98",
+              "name": "text",
+              "value": null
+            },
+            {
+              "widgetId": "b01c45ec-55ef-41b1-82b2-79fa30826f98",
+              "name": "title",
+              "value": "\"Mes derniers documents créés\""
+            }
+          ]
+        },
+        {
+          "widgetId": "595e7350-501c-4a0c-8f17-7eb6e402f087",
+          "dashboardId": "f61f7731-f693-4f09-ae82-53a56fd35a9c",
+          "name": "New Document",
+          "description": null,
+          "icon": null,
+          "widgetType": "documentCreation",
+          "column": 0,
+          "row": 2,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "d71ac14b1b2cd144b712102c0f4a6e59",
+          "creationDate": "2022-02-02T15:33:40.773Z",
+          "modificationDate": "2022-02-02T15:34:08.353Z",
+          "widgetParameters": [
+            {
+              "widgetId": "595e7350-501c-4a0c-8f17-7eb6e402f087",
+              "name": "attachmentRequired",
+              "value": "false"
+            },
+            {
+              "widgetId": "595e7350-501c-4a0c-8f17-7eb6e402f087",
+              "name": "openCreatedDocument",
+              "value": "true"
+            },
+            {
+              "widgetId": "595e7350-501c-4a0c-8f17-7eb6e402f087",
+              "name": "text",
+              "value": null
+            },
+            {
+              "widgetId": "595e7350-501c-4a0c-8f17-7eb6e402f087",
+              "name": "title",
+              "value": "\"Exemple entrant\""
+            },
+            {
+              "widgetId": "595e7350-501c-4a0c-8f17-7eb6e402f087",
+              "name": "workflowDocumentType",
+              "value": "{\"documentType\":\"COURRIERS_TYPE_7\",\"addPreProcessTask\":true}"
+            }
+          ]
+        },
+        {
+          "widgetId": "18fcb38e-87fb-4fce-b815-83de513cfd80",
+          "dashboardId": "f61f7731-f693-4f09-ae82-53a56fd35a9c",
+          "name": "New Document",
+          "description": null,
+          "icon": null,
+          "widgetType": "documentCreation",
+          "column": 4,
+          "row": 2,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "d71ac14b1b2cd144b712102c0f4a6e59",
+          "creationDate": "2021-10-04T09:56:59.813Z",
+          "modificationDate": "2022-03-08T08:03:26.46Z",
+          "widgetParameters": [
+            {
+              "widgetId": "18fcb38e-87fb-4fce-b815-83de513cfd80",
+              "name": "attachmentRequired",
+              "value": "true"
+            },
+            {
+              "widgetId": "18fcb38e-87fb-4fce-b815-83de513cfd80",
+              "name": "openCreatedDocument",
+              "value": "false"
+            },
+            {
+              "widgetId": "18fcb38e-87fb-4fce-b815-83de513cfd80",
+              "name": "text",
+              "value": null
+            },
+            {
+              "widgetId": "18fcb38e-87fb-4fce-b815-83de513cfd80",
+              "name": "title",
+              "value": "\"Carte déchèterie\""
+            },
+            {
+              "widgetId": "18fcb38e-87fb-4fce-b815-83de513cfd80",
+              "name": "workflowDocumentType",
+              "value": "{\"addPreProcessTask\":true,\"pigeonholeId\":\"COURRIERS_CASIERS_30\"}"
+            }
+          ]
+        },
+        {
+          "widgetId": "b1079aa7-bf4b-480c-b91f-b270003a0477",
+          "dashboardId": "f61f7731-f693-4f09-ae82-53a56fd35a9c",
+          "name": "New Document",
+          "description": null,
+          "icon": null,
+          "widgetType": "documentCreation",
+          "column": 1,
+          "row": 2,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "d71ac14b1b2cd144b712102c0f4a6e59",
+          "creationDate": "2022-02-02T15:33:46.49Z",
+          "modificationDate": "2022-02-02T15:34:25.87Z",
+          "widgetParameters": [
+            {
+              "widgetId": "b1079aa7-bf4b-480c-b91f-b270003a0477",
+              "name": "attachmentRequired",
+              "value": "false"
+            },
+            {
+              "widgetId": "b1079aa7-bf4b-480c-b91f-b270003a0477",
+              "name": "openCreatedDocument",
+              "value": "true"
+            },
+            {
+              "widgetId": "b1079aa7-bf4b-480c-b91f-b270003a0477",
+              "name": "text",
+              "value": null
+            },
+            {
+              "widgetId": "b1079aa7-bf4b-480c-b91f-b270003a0477",
+              "name": "title",
+              "value": "\"Exemple interne\""
+            },
+            {
+              "widgetId": "b1079aa7-bf4b-480c-b91f-b270003a0477",
+              "name": "workflowDocumentType",
+              "value": "{\"documentType\":\"COURRIERS_TYPE_6\",\"addPreProcessTask\":true}"
+            }
+          ]
+        },
+        {
+          "widgetId": "a88384bd-f166-41fa-9e44-ca1f5f3ca5c8",
+          "dashboardId": "f61f7731-f693-4f09-ae82-53a56fd35a9c",
+          "name": "New Document",
+          "description": null,
+          "icon": null,
+          "widgetType": "documentCreation",
+          "column": 2,
+          "row": 2,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "d71ac14b1b2cd144b712102c0f4a6e59",
+          "creationDate": "2022-02-02T15:58:25.147Z",
+          "modificationDate": "2022-02-02T15:59:24.54Z",
+          "widgetParameters": [
+            {
+              "widgetId": "a88384bd-f166-41fa-9e44-ca1f5f3ca5c8",
+              "name": "attachmentRequired",
+              "value": "false"
+            },
+            {
+              "widgetId": "a88384bd-f166-41fa-9e44-ca1f5f3ca5c8",
+              "name": "openCreatedDocument",
+              "value": "true"
+            },
+            {
+              "widgetId": "a88384bd-f166-41fa-9e44-ca1f5f3ca5c8",
+              "name": "text",
+              "value": null
+            },
+            {
+              "widgetId": "a88384bd-f166-41fa-9e44-ca1f5f3ca5c8",
+              "name": "title",
+              "value": "\"Exemple sortant\""
+            },
+            {
+              "widgetId": "a88384bd-f166-41fa-9e44-ca1f5f3ca5c8",
+              "name": "workflowDocumentType",
+              "value": "{\"documentType\":\"COURRIERS_TYPE_8\",\"addPreProcessTask\":true}"
+            }
+          ]
+        },
+        {
+          "widgetId": "401cdf27-8d9c-4edc-808f-cd83d96df4a6",
+          "dashboardId": "f61f7731-f693-4f09-ae82-53a56fd35a9c",
+          "name": "Web view",
+          "description": null,
+          "icon": null,
+          "widgetType": "webView",
+          "column": 5,
+          "row": 0,
+          "colspan": 4,
+          "rowspan": 4,
+          "shared": true,
+          "system": false,
+          "owner": "d71ac14b1b2cd144b712102c0f4a6e59",
+          "creationDate": "2022-02-03T07:40:44.627Z",
+          "modificationDate": "2022-03-08T08:03:29.757Z",
+          "widgetParameters": [
+            {
+              "widgetId": "401cdf27-8d9c-4edc-808f-cd83d96df4a6",
+              "name": "text",
+              "value": null
+            },
+            {
+              "widgetId": "401cdf27-8d9c-4edc-808f-cd83d96df4a6",
+              "name": "title",
+              "value": "\"Nouveautés 2022-R1\""
+            },
+            {
+              "widgetId": "401cdf27-8d9c-4edc-808f-cd83d96df4a6",
+              "name": "url",
+              "value": "\"/documentation/Chantiers 2022-R1-Communication V2-client.pdf\""
+            }
+          ]
+        },
+        {
+          "widgetId": "d6ea34da-5b68-4ae3-a983-d53393b4be4e",
+          "dashboardId": "f61f7731-f693-4f09-ae82-53a56fd35a9c",
+          "name": "New Document",
+          "description": null,
+          "icon": null,
+          "widgetType": "documentCreation",
+          "column": 0,
+          "row": 0,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "d71ac14b1b2cd144b712102c0f4a6e59",
+          "creationDate": "2021-08-30T10:00:56.577Z",
+          "modificationDate": "2021-08-30T10:03:56.073Z",
+          "widgetParameters": [
+            {
+              "widgetId": "d6ea34da-5b68-4ae3-a983-d53393b4be4e",
+              "name": "attachmentRequired",
+              "value": "false"
+            },
+            {
+              "widgetId": "d6ea34da-5b68-4ae3-a983-d53393b4be4e",
+              "name": "openCreatedDocument",
+              "value": "true"
+            },
+            {
+              "widgetId": "d6ea34da-5b68-4ae3-a983-d53393b4be4e",
+              "name": "text",
+              "value": null
+            },
+            {
+              "widgetId": "d6ea34da-5b68-4ae3-a983-d53393b4be4e",
+              "name": "title",
+              "value": "\"PBI\""
+            },
+            {
+              "widgetId": "d6ea34da-5b68-4ae3-a983-d53393b4be4e",
+              "name": "workflowDocumentType",
+              "value": "{\"documentType\":\"COURRIERS_TYPE_1\",\"addPreProcessTask\":true}"
+            }
+          ]
+        },
+        {
+          "widgetId": "5c641472-a256-4cf7-892f-ff678ac2fdd5",
+          "dashboardId": "f61f7731-f693-4f09-ae82-53a56fd35a9c",
+          "name": "New Document",
+          "description": null,
+          "icon": null,
+          "widgetType": "documentCreation",
+          "column": 0,
+          "row": 1,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "d71ac14b1b2cd144b712102c0f4a6e59",
+          "creationDate": "2021-09-27T09:17:37.357Z",
+          "modificationDate": "2022-02-01T17:17:56.347Z",
+          "widgetParameters": [
+            {
+              "widgetId": "5c641472-a256-4cf7-892f-ff678ac2fdd5",
+              "name": "attachmentRequired",
+              "value": "false"
+            },
+            {
+              "widgetId": "5c641472-a256-4cf7-892f-ff678ac2fdd5",
+              "name": "openCreatedDocument",
+              "value": "true"
+            },
+            {
+              "widgetId": "5c641472-a256-4cf7-892f-ff678ac2fdd5",
+              "name": "text",
+              "value": null
+            },
+            {
+              "widgetId": "5c641472-a256-4cf7-892f-ff678ac2fdd5",
+              "name": "title",
+              "value": "\"Document In \""
+            },
+            {
+              "widgetId": "5c641472-a256-4cf7-892f-ff678ac2fdd5",
+              "name": "workflowDocumentType",
+              "value": "{\"documentType\":\"COURRIERS_TYPE_4\",\"addPreProcessTask\":true}"
+            }
+          ]
+        }
+      ],
+      "type": 1
+    },
+    {
+      "id": 2,
+      "dashboardId": "b33c71cc-0c1a-407d-b4f9-9c930d608a78",
+      "name": "chhhh",
+      "description": "",
+      "owner": {
+        "uid": "d71ac14b1b2cd144b712102c0f4a6e59",
+        "label": null,
+        "type": 0,
+        "email": null,
+        "isExternal": false,
+        "delegationId": null,
+        "isUnknown": false,
+        "absenceStartDate": null,
+        "absenceEndDate": null,
+        "isAutomaton": false
+      },
+      "creationDate": "2022-03-17T08:34:59.47Z",
+      "modificationDate": "2022-03-28T09:45:20.413Z",
+      "modifiedBy": {
+        "uid": "d71ac14b1b2cd144b712102c0f4a6e59",
+        "label": null,
+        "type": 0,
+        "email": null,
+        "isExternal": false,
+        "delegationId": null,
+        "isUnknown": false,
+        "absenceStartDate": null,
+        "absenceEndDate": null,
+        "isAutomaton": false
+      },
+      "dashboardProperties": [],
+      "widgetInstances": [
+        {
+          "widgetId": "43b3410b-a89c-4b81-a1e6-6e9bb0b65bb4",
+          "dashboardId": "b33c71cc-0c1a-407d-b4f9-9c930d608a78",
+          "name": "New Document",
+          "description": null,
+          "icon": null,
+          "widgetType": "documentCreation",
+          "column": 1,
+          "row": 0,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "d71ac14b1b2cd144b712102c0f4a6e59",
+          "creationDate": "2022-03-24T09:20:57.733Z",
+          "modificationDate": "2022-03-24T09:21:23.493Z",
+          "widgetParameters": [
+            {
+              "widgetId": "43b3410b-a89c-4b81-a1e6-6e9bb0b65bb4",
+              "name": "attachmentRequired",
+              "value": "false"
+            },
+            {
+              "widgetId": "43b3410b-a89c-4b81-a1e6-6e9bb0b65bb4",
+              "name": "openCreatedDocument",
+              "value": "true"
+            },
+            {
+              "widgetId": "43b3410b-a89c-4b81-a1e6-6e9bb0b65bb4",
+              "name": "text",
+              "value": null
+            },
+            {
+              "widgetId": "43b3410b-a89c-4b81-a1e6-6e9bb0b65bb4",
+              "name": "title",
+              "value": "\"Créer un nouveau\""
+            },
+            {
+              "widgetId": "43b3410b-a89c-4b81-a1e6-6e9bb0b65bb4",
+              "name": "workflowDocumentType",
+              "value": "{\"documentType\":\"COURRIERS_TYPE_4\",\"addPreProcessTask\":true}"
+            }
+          ]
+        },
+        {
+          "widgetId": "913c4471-dc66-498b-9593-a30ac60d27e3",
+          "dashboardId": "b33c71cc-0c1a-407d-b4f9-9c930d608a78",
+          "name": "Counter",
+          "description": null,
+          "icon": null,
+          "widgetType": "counter",
+          "column": 0,
+          "row": 0,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "d71ac14b1b2cd144b712102c0f4a6e59",
+          "creationDate": "2022-03-17T08:35:15.04Z",
+          "modificationDate": "2022-03-24T09:20:43.557Z",
+          "widgetParameters": [
+            {
+              "widgetId": "913c4471-dc66-498b-9593-a30ac60d27e3",
+              "name": "dataSource",
+              "value": "{\"source\":\"activity\",\"id\":\"FOLDER_NOUVEAU_54\"}"
+            },
+            {
+              "widgetId": "913c4471-dc66-498b-9593-a30ac60d27e3",
+              "name": "icon",
+              "value": "\"wifi\""
+            },
+            {
+              "widgetId": "913c4471-dc66-498b-9593-a30ac60d27e3",
+              "name": "intervals",
+              "value": "[{\"bgColor\":\"#0C797D\",\"color\":\"#4D4D4D\"}]"
+            },
+            {
+              "widgetId": "913c4471-dc66-498b-9593-a30ac60d27e3",
+              "name": "text",
+              "value": null
+            },
+            {
+              "widgetId": "913c4471-dc66-498b-9593-a30ac60d27e3",
+              "name": "title",
+              "value": "\"h\""
+            }
+          ]
+        },
+        {
+          "widgetId": "5ea64a4e-cf2a-457e-a16d-c62783fee366",
+          "dashboardId": "b33c71cc-0c1a-407d-b4f9-9c930d608a78",
+          "name": "New Document",
+          "description": "",
+          "icon": null,
+          "widgetType": "documentCreation",
+          "column": 3,
+          "row": 0,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "d71ac14b1b2cd144b712102c0f4a6e59",
+          "creationDate": "2022-03-28T09:31:47.453Z",
+          "modificationDate": "2022-03-28T09:31:47.453Z",
+          "widgetParameters": [
+            {
+              "widgetId": "5ea64a4e-cf2a-457e-a16d-c62783fee366",
+              "name": "attachmentRequired",
+              "value": "false"
+            },
+            {
+              "widgetId": "5ea64a4e-cf2a-457e-a16d-c62783fee366",
+              "name": "openCreatedDocument",
+              "value": "true"
+            },
+            {
+              "widgetId": "5ea64a4e-cf2a-457e-a16d-c62783fee366",
+              "name": "workflowDocumentType",
+              "value": "{\"documentType\":\"\",\"workflowId\":\"\", \"addPreProcessTask\": true}"
+            }
+          ]
+        },
+        {
+          "widgetId": "9ab07f5b-7716-4416-8adb-ee266b9c928a",
+          "dashboardId": "b33c71cc-0c1a-407d-b4f9-9c930d608a78",
+          "name": "Task list",
+          "description": "",
+          "icon": null,
+          "widgetType": "taskList",
+          "column": 10,
+          "row": 0,
+          "colspan": 3,
+          "rowspan": 4,
+          "shared": true,
+          "system": false,
+          "owner": "d71ac14b1b2cd144b712102c0f4a6e59",
+          "creationDate": "2022-03-28T09:45:20.397Z",
+          "modificationDate": "2022-03-28T09:45:20.397Z",
+          "widgetParameters": [
+            {
+              "widgetId": "9ab07f5b-7716-4416-8adb-ee266b9c928a",
+              "name": "limit",
+              "value": "10"
+            },
+            {
+              "widgetId": "9ab07f5b-7716-4416-8adb-ee266b9c928a",
+              "name": "title",
+              "value": "\"WidgetTaskListDefaultTitle\""
+            }
+          ]
+        }
+      ],
+      "type": 1
+    },
+    {
+      "id": 3,
+      "dashboardId": "534f75d6-d04a-4d6a-8c30-b84574922e3d",
+      "name": "hhh",
+      "description": "",
+      "owner": {
+        "uid": "d71ac14b1b2cd144b712102c0f4a6e59",
+        "label": null,
+        "type": 0,
+        "email": null,
+        "isExternal": false,
+        "delegationId": null,
+        "isUnknown": false,
+        "absenceStartDate": null,
+        "absenceEndDate": null,
+        "isAutomaton": false
+      },
+      "creationDate": "2022-03-24T16:01:16.273Z",
+      "modificationDate": "2022-03-24T16:01:16.273Z",
+      "modifiedBy": {
+        "uid": "d71ac14b1b2cd144b712102c0f4a6e59",
+        "label": null,
+        "type": 0,
+        "email": null,
+        "isExternal": false,
+        "delegationId": null,
+        "isUnknown": false,
+        "absenceStartDate": null,
+        "absenceEndDate": null,
+        "isAutomaton": false
+      },
+      "dashboardProperties": [],
+      "widgetInstances": [],
+      "type": 1
+    },
+    {
+      "id": 4,
+      "dashboardId": "64dd0706-a0fb-4d44-a225-fe1e63181c52",
+      "name": "Mon tableau de bord ",
+      "description": "tableau de bord avec 2 widgets ",
+      "owner": {
+        "uid": "d71ac14b1b2cd144b712102c0f4a6e59",
+        "label": null,
+        "type": 0,
+        "email": null,
+        "isExternal": false,
+        "delegationId": null,
+        "isUnknown": false,
+        "absenceStartDate": null,
+        "absenceEndDate": null,
+        "isAutomaton": false
+      },
+      "creationDate": "2022-03-08T15:35:34.583Z",
+      "modificationDate": "2022-03-09T16:16:13.437Z",
+      "modifiedBy": {
+        "uid": "d71ac14b1b2cd144b712102c0f4a6e59",
+        "label": null,
+        "type": 0,
+        "email": null,
+        "isExternal": false,
+        "delegationId": null,
+        "isUnknown": false,
+        "absenceStartDate": null,
+        "absenceEndDate": null,
+        "isAutomaton": false
+      },
+      "dashboardProperties": [],
+      "widgetInstances": [
+        {
+          "widgetId": "3658a6ab-6b8e-4af1-a913-b4d13d40c337",
+          "dashboardId": "64dd0706-a0fb-4d44-a225-fe1e63181c52",
+          "name": "Result list",
+          "description": null,
+          "icon": null,
+          "widgetType": "resultList",
+          "column": 1,
+          "row": 0,
+          "colspan": 3,
+          "rowspan": 5,
+          "shared": true,
+          "system": false,
+          "owner": "d71ac14b1b2cd144b712102c0f4a6e59",
+          "creationDate": "2022-03-08T15:37:05.35Z",
+          "modificationDate": "2022-03-08T15:41:39.243Z",
+          "widgetParameters": [
+            {
+              "widgetId": "3658a6ab-6b8e-4af1-a913-b4d13d40c337",
+              "name": "dataSource",
+              "value": "{\"source\":\"activity\",\"id\":\"FOLDER_A_VALIDER_POUR_VISA\"}"
+            },
+            {
+              "widgetId": "3658a6ab-6b8e-4af1-a913-b4d13d40c337",
+              "name": "detailLevel",
+              "value": "\"2\""
+            },
+            {
+              "widgetId": "3658a6ab-6b8e-4af1-a913-b4d13d40c337",
+              "name": "text",
+              "value": null
+            },
+            {
+              "widgetId": "3658a6ab-6b8e-4af1-a913-b4d13d40c337",
+              "name": "title",
+              "value": "\"Mes taches \""
+            }
+          ]
+        },
+        {
+          "widgetId": "85bb4420-8880-4bec-8d28-d8439406b1eb",
+          "dashboardId": "64dd0706-a0fb-4d44-a225-fe1e63181c52",
+          "name": "Counter",
+          "description": null,
+          "icon": null,
+          "widgetType": "counter",
+          "column": 6,
+          "row": 0,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "d71ac14b1b2cd144b712102c0f4a6e59",
+          "creationDate": "2022-03-08T15:36:48.72Z",
+          "modificationDate": "2022-03-09T16:16:13.423Z",
+          "widgetParameters": [
+            {
+              "widgetId": "85bb4420-8880-4bec-8d28-d8439406b1eb",
+              "name": "dataSource",
+              "value": "{\"source\":\"favorite\",\"id\":\"\"}"
+            },
+            {
+              "widgetId": "85bb4420-8880-4bec-8d28-d8439406b1eb",
+              "name": "icon",
+              "value": "\"star-o\""
+            },
+            {
+              "widgetId": "85bb4420-8880-4bec-8d28-d8439406b1eb",
+              "name": "intervals",
+              "value": "[{\"bgColor\":\"#FCDC00\",\"color\":\"#4D4D4D\"}]"
+            },
+            {
+              "widgetId": "85bb4420-8880-4bec-8d28-d8439406b1eb",
+              "name": "text",
+              "value": null
+            },
+            {
+              "widgetId": "85bb4420-8880-4bec-8d28-d8439406b1eb",
+              "name": "title",
+              "value": "\"Mes favoris\""
+            }
+          ]
+        }
+      ],
+      "type": 1
+    },
+    {
+      "id": 5,
+      "dashboardId": "1c780395-33f1-4c02-a8c6-879a206001e3",
+      "name": "mon tableau de bord 2",
+      "description": "un tableau de bord 2",
+      "owner": {
+        "uid": "d71ac14b1b2cd144b712102c0f4a6e59",
+        "label": null,
+        "type": 0,
+        "email": null,
+        "isExternal": false,
+        "delegationId": null,
+        "isUnknown": false,
+        "absenceStartDate": null,
+        "absenceEndDate": null,
+        "isAutomaton": false
+      },
+      "creationDate": "2022-03-09T08:05:40.14Z",
+      "modificationDate": "2022-03-25T09:31:05.243Z",
+      "modifiedBy": {
+        "uid": "d71ac14b1b2cd144b712102c0f4a6e59",
+        "label": null,
+        "type": 0,
+        "email": null,
+        "isExternal": false,
+        "delegationId": null,
+        "isUnknown": false,
+        "absenceStartDate": null,
+        "absenceEndDate": null,
+        "isAutomaton": false
+      },
+      "dashboardProperties": [],
+      "widgetInstances": [
+        {
+          "widgetId": "38a3716c-018a-4e7c-94a6-560c6af8fca9",
+          "dashboardId": "1c780395-33f1-4c02-a8c6-879a206001e3",
+          "name": "Counter",
+          "description": "",
+          "icon": null,
+          "widgetType": "counter",
+          "column": 2,
+          "row": 2,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "d71ac14b1b2cd144b712102c0f4a6e59",
+          "creationDate": "2022-03-24T16:02:09.32Z",
+          "modificationDate": "2022-03-24T16:02:09.32Z",
+          "widgetParameters": [
+            {
+              "widgetId": "38a3716c-018a-4e7c-94a6-560c6af8fca9",
+              "name": "icon",
+              "value": "\"hashtag\""
+            },
+            {
+              "widgetId": "38a3716c-018a-4e7c-94a6-560c6af8fca9",
+              "name": "intervals",
+              "value": "[{\"bgColor\":\"#009CE0\",\"color\":\"#FFFFFF\"}]"
+            }
+          ]
+        },
+        {
+          "widgetId": "dbda186f-8ab7-449a-8d46-5ad6faa4ada1",
+          "dashboardId": "1c780395-33f1-4c02-a8c6-879a206001e3",
+          "name": "Counter",
+          "description": null,
+          "icon": null,
+          "widgetType": "counter",
+          "column": 0,
+          "row": 2,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "d71ac14b1b2cd144b712102c0f4a6e59",
+          "creationDate": "2022-03-25T09:28:50.183Z",
+          "modificationDate": "2022-03-25T09:31:05.21Z",
+          "widgetParameters": [
+            {
+              "widgetId": "dbda186f-8ab7-449a-8d46-5ad6faa4ada1",
+              "name": "dataSource",
+              "value": "{\"source\":\"activity\",\"id\":\"FOLDER_ENCOURS_54\"}"
+            },
+            {
+              "widgetId": "dbda186f-8ab7-449a-8d46-5ad6faa4ada1",
+              "name": "icon",
+              "value": "\"ban\""
+            },
+            {
+              "widgetId": "dbda186f-8ab7-449a-8d46-5ad6faa4ada1",
+              "name": "intervals",
+              "value": "[{\"bgColor\":\"#FFFFFF\",\"color\":\"#68CCCA\"}]"
+            },
+            {
+              "widgetId": "dbda186f-8ab7-449a-8d46-5ad6faa4ada1",
+              "name": "text",
+              "value": null
+            },
+            {
+              "widgetId": "dbda186f-8ab7-449a-8d46-5ad6faa4ada1",
+              "name": "title",
+              "value": "\"gggg\""
+            }
+          ]
+        },
+        {
+          "widgetId": "bdd93e56-6194-4af5-904f-6fff6641308f",
+          "dashboardId": "1c780395-33f1-4c02-a8c6-879a206001e3",
+          "name": "New Document",
+          "description": "",
+          "icon": null,
+          "widgetType": "documentCreation",
+          "column": 12,
+          "row": 1,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "d71ac14b1b2cd144b712102c0f4a6e59",
+          "creationDate": "2022-03-09T08:48:52.76Z",
+          "modificationDate": "2022-03-09T08:48:52.76Z",
+          "widgetParameters": [
+            {
+              "widgetId": "bdd93e56-6194-4af5-904f-6fff6641308f",
+              "name": "attachmentRequired",
+              "value": "false"
+            },
+            {
+              "widgetId": "bdd93e56-6194-4af5-904f-6fff6641308f",
+              "name": "openCreatedDocument",
+              "value": "true"
+            },
+            {
+              "widgetId": "bdd93e56-6194-4af5-904f-6fff6641308f",
+              "name": "workflowDocumentType",
+              "value": "{\"documentType\":\"\",\"workflowId\":\"\", \"addPreProcessTask\": true}"
+            }
+          ]
+        },
+        {
+          "widgetId": "313c5202-e47c-4614-9280-aa94c7b31937",
+          "dashboardId": "1c780395-33f1-4c02-a8c6-879a206001e3",
+          "name": "Note",
+          "description": null,
+          "icon": null,
+          "widgetType": "note",
+          "column": 0,
+          "row": 4,
+          "colspan": 2,
+          "rowspan": 2,
+          "shared": true,
+          "system": false,
+          "owner": "d71ac14b1b2cd144b712102c0f4a6e59",
+          "creationDate": "2022-03-09T08:06:35.937Z",
+          "modificationDate": "2022-03-25T09:07:31.087Z",
+          "widgetParameters": [
+            {
+              "widgetId": "313c5202-e47c-4614-9280-aa94c7b31937",
+              "name": "color",
+              "value": "\"#0b7b99\""
+            },
+            {
+              "widgetId": "313c5202-e47c-4614-9280-aa94c7b31937",
+              "name": "text",
+              "value": "\"\""
+            },
+            {
+              "widgetId": "313c5202-e47c-4614-9280-aa94c7b31937",
+              "name": "title",
+              "value": "\"WidgetNoteDefaultTitle\""
+            }
+          ]
+        },
+        {
+          "widgetId": "415a2e9e-836b-4a1c-93d4-d13d42fcef88",
+          "dashboardId": "1c780395-33f1-4c02-a8c6-879a206001e3",
+          "name": "Counter",
+          "description": null,
+          "icon": null,
+          "widgetType": "counter",
+          "column": 0,
+          "row": 0,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "d71ac14b1b2cd144b712102c0f4a6e59",
+          "creationDate": "2022-03-09T08:48:58.813Z",
+          "modificationDate": "2022-03-09T08:49:41.277Z",
+          "widgetParameters": [
+            {
+              "widgetId": "415a2e9e-836b-4a1c-93d4-d13d42fcef88",
+              "name": "dataSource",
+              "value": "{\"source\":\"activity\",\"id\":\"FOLDER_NOUVEAU_54\"}"
+            },
+            {
+              "widgetId": "415a2e9e-836b-4a1c-93d4-d13d42fcef88",
+              "name": "icon",
+              "value": "\"hashtag\""
+            },
+            {
+              "widgetId": "415a2e9e-836b-4a1c-93d4-d13d42fcef88",
+              "name": "intervals",
+              "value": "[{\"bgColor\":\"#9F0500\",\"color\":\"#FFFFFF\"}]"
+            },
+            {
+              "widgetId": "415a2e9e-836b-4a1c-93d4-d13d42fcef88",
+              "name": "text",
+              "value": null
+            },
+            {
+              "widgetId": "415a2e9e-836b-4a1c-93d4-d13d42fcef88",
+              "name": "title",
+              "value": "\"activités\""
+            }
+          ]
+        },
+        {
+          "widgetId": "9ad600fb-a612-4d87-af29-d5c758ea8f31",
+          "dashboardId": "1c780395-33f1-4c02-a8c6-879a206001e3",
+          "name": "Chart",
+          "description": "",
+          "icon": null,
+          "widgetType": "chart",
+          "column": 1,
+          "row": 1,
+          "colspan": 2,
+          "rowspan": 2,
+          "shared": true,
+          "system": false,
+          "owner": "d71ac14b1b2cd144b712102c0f4a6e59",
+          "creationDate": "2022-03-09T14:24:24.373Z",
+          "modificationDate": "2022-03-09T14:24:24.373Z",
+          "widgetParameters": [
+            {
+              "widgetId": "9ad600fb-a612-4d87-af29-d5c758ea8f31",
+              "name": "date",
+              "value": "false"
+            },
+            {
+              "widgetId": "9ad600fb-a612-4d87-af29-d5c758ea8f31",
+              "name": "key",
+              "value": "0"
+            },
+            {
+              "widgetId": "9ad600fb-a612-4d87-af29-d5c758ea8f31",
+              "name": "legend",
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "widgetId": "52f107a6-ef21-41dc-83d5-e4a910331011",
+          "dashboardId": "1c780395-33f1-4c02-a8c6-879a206001e3",
+          "name": "Counter",
+          "description": null,
+          "icon": null,
+          "widgetType": "counter",
+          "column": 0,
+          "row": 1,
+          "colspan": 1,
+          "rowspan": 1,
+          "shared": true,
+          "system": false,
+          "owner": "d71ac14b1b2cd144b712102c0f4a6e59",
+          "creationDate": "2022-03-09T08:06:22.213Z",
+          "modificationDate": "2022-03-25T09:08:42Z",
+          "widgetParameters": [
+            {
+              "widgetId": "52f107a6-ef21-41dc-83d5-e4a910331011",
+              "name": "dataSource",
+              "value": "{\"source\":\"activity\",\"id\":\"FOLDER_A_VALIDER_POUR_VISA\"}"
+            },
+            {
+              "widgetId": "52f107a6-ef21-41dc-83d5-e4a910331011",
+              "name": "icon",
+              "value": "\"hashtag\""
+            },
+            {
+              "widgetId": "52f107a6-ef21-41dc-83d5-e4a910331011",
+              "name": "intervals",
+              "value": "[{\"bgColor\":\"#009CE0\",\"color\":\"#FFFFFF\"}]"
+            },
+            {
+              "widgetId": "52f107a6-ef21-41dc-83d5-e4a910331011",
+              "name": "text",
+              "value": null
+            },
+            {
+              "widgetId": "52f107a6-ef21-41dc-83d5-e4a910331011",
+              "name": "title",
+              "value": "\"ajout\""
+            }
+          ]
+        }
+      ],
+      "type": 1
+    },
+    {
+      "name": "pp",
+      "id": 6
+    },
+    {
+      "name": "ooo",
+      "id": 7
+    },
+    {
+      "name": "gf",
+      "id": 8
+    },
+    {
+      "name": "hhhh",
+      "id": 9
+    },
+    {
+      "name": "chaaima",
+      "id": 10
+    },
+    {
+      "name": "kiki",
+      "id": 11
+    }
+  ],
+  "version": {
+    "version": "6.0",
+    "build": "8070",
+    "buildLabel": "Elise 6 2022-R1",
+    "patchVersion": 0
+  },
+  "delegations":[],
+  "language": [
+    {
+        "label": "Français",
+        "code": "fr-FR",
+        "wml": "FR"
+    },
+    {
+        "label": "English (GB)",
+        "code": "en-GB",
+        "wml": "EN-GB"
+    },
+    {
+        "label": "العربية",
+        "code": "ar-TN",
+        "wml": "AR-TN"
+    },
+    {
+        "label": "English",
+        "code": "en-US",
+        "wml": "EN-US"
+    },
+    {
+        "label": "Nederlands",
+        "code": "nl-NL",
+        "wml": "NL-NL"
+    }
+]
+}
