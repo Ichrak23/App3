@@ -8,7 +8,7 @@
               :src="getImageURl()"
               class="avatar1"
               button
-              @click="menuNavigation('/ProfilPage')"
+              @click="menuNavigation('/Profil')"
             ></ion-img>
             <div style="padding-top: 20px">
               <div class="truncated">
@@ -51,7 +51,7 @@
               button
               @click="
                 menuNavigation(
-                  '/homepage/' + id + '/e10416ad-e9db-4b2e-b6bb-643d96cf046b'
+                  '/home/' + id + '/e10416ad-e9db-4b2e-b6bb-643d96cf046b'
                 )
               "
               >{{ this.dWsName }}
@@ -71,7 +71,7 @@
                 id = space.workspaceId;
                 WsName = space.name;
                 menuNavigation(
-                  '/homepage/' + id + '/e10416ad-e9db-4b2e-b6bb-643d96cf046b'
+                  '/home/' + id + '/e10416ad-e9db-4b2e-b6bb-643d96cf046b'
                 );
               "
             >
@@ -120,7 +120,7 @@
               <ion-label
                 class="child-item"
                 button
-                @click="menuNavigation('/homepage/' + id + '/' + d.dashboardId)"
+                @click="menuNavigation('/home/' + id + '/' + d.dashboardId)"
               >
                 {{ d.name }}
               </ion-label>
@@ -146,7 +146,6 @@
               <ion-label
                 class="child-item"
                 button
-                @click="menuNavigation('/activities')"
                 >Activities</ion-label
               >
             </ion-row>
@@ -171,7 +170,7 @@
               <ion-label
                 class="child-item"
                 button
-                @click="menuNavigation('/homepage')"
+                @click="menuNavigation('/home')"
                 >Vues dynamiques</ion-label
               >
             </ion-row>
@@ -212,7 +211,7 @@
             <ion-item lines="none" class="child-item" style="margin-top : -25px !important;">
             <ion-label 
               button
-              @click="menuNavigation('/homepage/' + id + '/' + dash.dashboardId)"
+              @click="menuNavigation('/home/' + id + '/' + dash.dashboardId)"
             >
               {{ dash.name }}
             </ion-label>
@@ -458,7 +457,7 @@ export default {
     logout() {
       fetch("https://elise6-pfe.elisedemo.com/GED/Elise/Home/logoff")
         .then((response) => response.text())
-        .then(this.menuNavigation("/loginpagee"));
+        .then(this.menuNavigation("/login"));
     },
   },
 };

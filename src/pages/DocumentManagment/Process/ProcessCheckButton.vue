@@ -1,54 +1,59 @@
 <template>
   <ion-page>
-    <ion-header class="header2">
-       <ion-toolbar>
-        <ion-grid style="background-color: white;">
+    <ion-header class="header-style">
+      <ion-toolbar>
+        <ion-grid class="grid-style">
           <ion-row>
-              <ion-row style="align-items: center">
-            <ion-button fill="clear" :href="'/createdocument/Processus/'+this.id">
-              <ion-icon :icon="arrowBack"></ion-icon>
-            </ion-button>
-            <ion-input id="input" type="text"></ion-input>
-            
+            <ion-row >
+              <ion-button fill="clear" :href="'/Document/' + this.id">
+                <ion-icon :icon="arrowBack"></ion-icon>
+              </ion-button>
+              <ion-input id="input" type="text"></ion-input>
+
               <ion-button
-                id="nested-button1"
+                id="nested-button-first"
                 shape="circle"
                 class="buttonshape"
                 color="primary"
               >
-                <ion-icon :icon="add" size="large" color="light"></ion-icon></ion-button>
+                <ion-icon :icon="add" size="large" color="light"></ion-icon
+              ></ion-button>
               <ion-popover
-                trigger="nested-button1"
+                trigger="nested-button-first"
                 :dismiss-on-select="false"
                 color="white"
               >
                 <ion-content class="popover-content">
                   <ion-list>
-                    <ion-item :button="true" :detail="false" >
-                      <ion-icon id="podiumicon" :icon="person" style="margin-top: -12px;"></ion-icon>
+                    <ion-item :button="true" :detail="false">
+                      <ion-icon
+                        id="podiumicon"
+                        :icon="person"
+                        style="margin-top: -12px"
+                      ></ion-icon>
                       &nbsp;
-                      <ion-label class="textlabelcolor"
+                      <ion-label class="popover-content-detail"
                         >Demander des taches</ion-label
                       >
                     </ion-item>
                     <ion-item :button="true" :detail="false">
                       <ion-icon id="podiumicon" :icon="keypad"></ion-icon>
                       &nbsp;
-                      <ion-label class="textlabelcolor"
+                      <ion-label class="popover-content-detail"
                         >Appliquer un processus</ion-label
                       >
                     </ion-item>
                     <ion-item :button="true" :detail="false">
                       <ion-icon id="podiumicon" :icon="copy"></ion-icon>
                       &nbsp;
-                      <ion-label class="textlabelcolor"
+                      <ion-label class="popover-content-detail"
                         >lier des documents</ion-label
                       >
                     </ion-item>
                     <ion-item :button="true" :detail="false">
                       <ion-icon id="podiumicon" :icon="link"></ion-icon>
                       &nbsp;
-                      <ion-label class="textlabelcolor"
+                      <ion-label class="popover-content-detail"
                         >Ajouter un lien externe</ion-label
                       >
                     </ion-item>
@@ -80,16 +85,16 @@
                     :detail="false"
                     @click="presentAlert"
                   >
-                    <ion-icon id="icon1" :icon="mail"></ion-icon>&nbsp;
-                    <ion-label class="textlabelcolor"
-                      >Diffuser le document</ion-label
+                    <ion-icon id="mail-icon" :icon="mail"></ion-icon>&nbsp;
+                    <ion-label class="popover-content-detail"
+                      >Diffuser le requestDocument</ion-label
                     >
                   </ion-item>
                   <ion-item :button="true" :detail="false">
                     <ion-icon :icon="checkbox"></ion-icon>
                     &nbsp;
-                    <ion-label class="textlabelcolor"
-                      >Cloturer le document</ion-label
+                    <ion-label class="popover-content-detail"
+                      >Cloturer le requestDocument</ion-label
                     >
                   </ion-item>
                   <ion-item
@@ -99,21 +104,21 @@
                   >
                     <ion-icon :icon="download"></ion-icon>
                     &nbsp;
-                    <ion-label class="textlabelcolor"
-                      >Réserver le document</ion-label
+                    <ion-label class="popover-content-detail"
+                      >Réserver le requestDocument</ion-label
                     >
                   </ion-item>
                   <ion-item :button="true" :detail="false">
                     <ion-icon :icon="print"></ion-icon>
                     &nbsp;
-                    <ion-label class="textlabelcolor"
+                    <ion-label class="popover-content-detail"
                       >Imprimer la fiche de numérisation</ion-label
                     >
                   </ion-item>
                   <ion-item :button="true" :detail="false">
                     <ion-icon :icon="create"></ion-icon>
                     &nbsp;
-                    <ion-label class="textlabelcolor"
+                    <ion-label class="popover-content-detail"
                       >Créer une procédure de signature<br />
                       graphique</ion-label
                     >
@@ -131,54 +136,88 @@
         <br />
         <ion-item>
           <ion-item>
-            <ion-label class="matacheactivestyle" style="color: #0b7b99"
-              >HISTORIQUE DES ÉVENEMENTS</ion-label
+            <ion-label class="matacheactive-style" style="color: #0b7b99"
+              >PROCESSUS D'ÉLABORATION</ion-label
             >
+            <ion-select
+              :interface-options="customPopoverOptions"
+              interface="popover"
+            >
+              <ion-select-option
+                class="matacheactive-style"
+                value="PROCESSUSDETRAITEMENT"
+                size="cover"
+                >PROCESSUS DE TRAITEMENT</ion-select-option
+              >
+            </ion-select>
           </ion-item>
-
-          <ion-icon slot="end" :icon="refreshOutline" color="white"></ion-icon>
-          <ion-icon slot="end" :icon="filterOutline"></ion-icon>
+          <ion-icon slot="end" :icon="list" color="white"></ion-icon>
+          <ion-icon slot="end" :icon="gitNetwork"></ion-icon>
         </ion-item>
-        <ion-list lines="none">
-          <ion-item v-for="hist in history" :key="hist.id" style="padding: 5px">
-            <ion-thumbnail>
-              <ion-button
-                id="nested-button1"
-                shape="circle"
-                fill="outline"
-                color="primary"
-              >
-                <ion-icon
-                  :icon="iconsoperation[hist.operation]"
-                  color="dark"
-                  size="large"
-                ></ion-icon>
-              </ion-button>
-            </ion-thumbnail>
-            <ion-col>
-              <ion-label class="ion-text-wrapp" 
-                ><p
-                  style="color: #0b7b99; font-weight: bolder; font-size: 14px"
-                >
-                  {{this.labelOperation[hist.operation]}}
-                </p>
-              </ion-label>
+        <br />
+        <br />
 
-              <ion-label class="ion-text-wrapp"
-                ><p style="font-style: italic; font-size: 12px">
-                  {{ hist.user.label }}
-                </p></ion-label
-              >
-            </ion-col>
-            <ion-label slot="end" style="font-size:14px">{{
-              hist.date.slice(0, 4) +
-              "/" +
-              hist.date.slice(4, 6) +
-              "/" +
-              hist.date.slice(6, 8)
-            }}</ion-label>
-          </ion-item>
-        </ion-list>
+        <ion-label
+          class="Taches-actives-style"
+          style="color: #4a4a4a; margin-left: 15px"
+          >Tâches terminées (1)</ion-label
+        >
+
+        <ion-card class="card-style">
+          <ion-row>
+            <div class="task-avatar">
+              <ion-col>
+                <ion-avatar>
+                  <img src="/assets/capture3.png" />
+                </ion-avatar>
+                <div class="task-jelon">
+                  <ion-avatar>
+                    <img src="/assets/badge.svg" />
+                  </ion-avatar>
+                </div>
+                <div class="task-type-icon-wrapper">
+                  <ion-avatar>
+                    <img src="/assets/person.svg" />
+                  </ion-avatar>
+                </div>
+              </ion-col>
+            </div>
+            <ion-grid>
+              <ion-row>
+                <ion-col size="8">
+                  <div class="take-charge-by-style">1. Prendre en charge</div>
+                  <div class="user">
+                    <ion-label>{{ requestDocument.createdBy }}</ion-label
+                    >><ion-label>{{ requestDocument.modifiedBy }}</ion-label>
+                  </div>
+                </ion-col>
+                <ion-col>
+                  <div class="date-style">{{ requestDocument.creationDate }}</div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-row>
+          <ion-row>
+            <img class="image-comment-style" src="/assets/comment.png" />
+            <ion-textarea
+              placeholder="Enter votre commentaire..."
+            ></ion-textarea>
+            <ion-button
+              fill="outline"
+              color="primary"
+              id="send"
+              @click="presentLoading"
+              :href="'/ProcessSendButton/' + this.id"
+            >
+              <ion-icon :icon="send" size="large"></ion-icon>
+            </ion-button>
+            <ion-button fill="outline" color="primary" id="send">
+              <ion-icon :icon="checkmark" size="large"></ion-icon>
+            </ion-button>
+          </ion-row>
+          
+          <ion-row> </ion-row>
+        </ion-card>
       </ion-grid>
     </ion-content>
   </ion-page>
@@ -198,22 +237,24 @@ import {
   IonIcon,
   IonLabel,
   IonList,
+  IonCol,
   IonToolbar,
+  IonAvatar,
+  IonCard,
   loadingController,
 } from "@ionic/vue";
 import { defineComponent } from "@vue/runtime-core";
 import {
   arrowBack,
-  refreshOutline,
   list,
+  checkmark,
   time,
-  filterOutline,
   gitNetwork,
   send,
   paper,
   keypad,
-  checkmark,
   calendar,
+  ellipsisHorizontal,
   more,
   podium,
   person,
@@ -223,11 +264,7 @@ import {
   download,
   print,
   create,
-  arrowDownOutline,
   add,
-  ellipsisHorizontal,
-  close,
-  book,
   star,
   starOutline,
   qrCodeOutline,
@@ -240,7 +277,7 @@ export default defineComponent({
   props: {
     timeout: { type: Number, default: 1000 },
   },
-  name: "informationss",
+  name: "Informations",
   components: {
     IonContent,
     IonHeader,
@@ -254,114 +291,58 @@ export default defineComponent({
     IonIcon,
     IonLabel,
     IonList,
+    IonCol,
     IonToolbar,
+    IonAvatar,
+    IonCard,
   },
+
   data() {
     return {
-      iconsoperation: [
-        "add",
-        "create",
-        "close",
-        "book",
-        "send",
-        "send",
-        "download",
-        "refreshOutline",
-      ],
-      labelOperation: [
-        "Création du document",
-        "Modification du document",
-        "suppression du document",
-        "suppression du document",
-        "lecture du document",
-        "Diffusion collaborative du document",
-        "Autre diffusion du document",
-        " Réservation du document",
-        "Annuler Réservation du document",
-        "Mise à jourFlowchartProcessing",
-      ],
-      operation: "",
-      history: "",
+      requestDocument: "",
       user: [],
-      id:"",
-      currentinfo: [],
-      COURRIERS_1216: [],
-      fields_Generales_titre: [],
-      fields_Generales_contact: [],
-      fields_Generales_date: [],
-      fields_Generales_importance: [],
-      fields_Generales_confidentialite: [],
-      fields_Generales_support: [],
-      fields_Generales_signale: [],
-      fields_Generales_type: [],
-      fields_Generales_description: [],
-      fields_Generales_commentaire: [],
-      fields_Generales_recommande: [],
-      fields_Generales_date_ech: [],
       type: [],
-      medium: [],
-      duePeriod: [],
-      registeredMailInformation: [],
-      metadata: [],
-      isFavorite: false,
+      id: "",
     };
   },
-   async created() {
+  async created() {
     this.id = this.$route.params.id;
   },
-  
-  
   mounted() {
     let local = this;
-    var history = {
+    var requestDocument = {
       method: "get",
-      url: "https://localhost:7026/api/Auth/get/elise-document%2F"+this.id+"%2Fhistory%3FstartDate%3D%26endDate%3D%26start%3D0%26limit%3D30%26selectedEvents%3D7%26includeReadEvents%3Dfalse",
+      url: "https://localhost:7026/api/Auth/get/requestDocument%2FCOURRIERS_284%3FworkspaceId%3De5720509-1cb8-41f0-beae-50d9bb48d944",
       headers: {
         "content-Type": "application/json",
       },
     };
-    axios(history)
+    axios(requestDocument)
       .then(function (response) {
-        local.history = response.data.data.events;
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-      //https://localhost:7026/api/Auth/put/document
-      let local1 = this;
-    var putapi = {
-      method: "put",
-      url: "https://localhost:7026/api/Auth/put/document",
-      headers: {
-        "content-Type": "application/json",
-      },
-    };
-    axios(putapi)
-      .then(function (response) {
-        local1.putapi = response.data.data.events;
+        local.requestDocument = response.data.data;
       })
       .catch(function (error) {
         console.log(error);
       });
   },
+  
 
   setup() {
     return {
       arrowBack,
       list,
-      filterOutline,
-      gitNetwork,
-      close,
-      paper,
       time,
+      checkmark,
+      gitNetwork,
+      paper,
       send,
       keypad,
-      checkmark,
+
       calendar,
       more,
+      ellipsisHorizontal,
       podium,
       person,
-      arrowDownOutline,
       help,
       mail,
       checkbox,
@@ -369,19 +350,15 @@ export default defineComponent({
       print,
       create,
       add,
-      ellipsisHorizontal,
-      book,
       qrCodeOutline,
       star,
       starOutline,
-      refreshOutline,
       save,
       link,
       copy,
     };
   },
   methods: {
-    
     async presentLoading() {
       const loading = await loadingController.create({
         cssClass: "my-custom-class",
@@ -412,33 +389,19 @@ export default defineComponent({
       const dateTime = date + " " + time;
 
       return dateTime;
-
     },
     
-    async presentAlert() {
-      const alert = await alertController.create({
-        cssClass: "my-custom-class",
-        header: "RÉSERVER LE DOCUMENT",
-        message:
-          "La réservation du document vous octroie un accés exclusif en modification sur ce document le temps de la réservation. Il restera accessible des autres utilisateurs, en lecture seule. Il est possible d'apporter plus de précisions aux utilisateurs sur la réservation en précisant le motif.",
-        buttons: ["ANNULER", "RÉSERVER LE DOCUMENT"],
-      });
-      await alert.present();
-
-      const { role } = await alert.onDidDismiss();
-      console.log("onDidDismiss resolved with role", role);
-    },
   },
 });
 </script>
 <style scoped>
-.header2 {
+.header-style {
   background-color: #0a6e89;
 }
-.ion-card1 {
+.card-style {
   background-color: #e8f3f6;
 }
-.icon1 {
+.mail-icon {
   position: absolute;
   top: 25%;
   right: 0;
@@ -449,6 +412,11 @@ ion-button[shape="circle"] {
   width: 56px;
   height: 56px;
 }
+ion-button[shape="circle2"] {
+  --border-radius: 50%;
+  width: 47px;
+  height: 47px;
+}
 ion-select-option {
   font-family: "Trebuchet MS", sans-serif;
   font-size: 20px;
@@ -458,6 +426,19 @@ ion-select-option {
   display: flex;
   align-items: center;
   position: relative;
+}
+.task-jelon {
+  position: absolute;
+  top: calc(50% - 8px);
+  height: 18px;
+  width: 18px;
+  background-color: #0a6e89;
+  border-radius: 50%;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: -2px;
 }
 .task-type-icon-wrapper {
   bottom: 0;
@@ -471,122 +452,80 @@ ion-select-option {
   justify-content: center;
   z-index: 9;
   right: 0;
-  left: 45px;
-  top: 40px;
+  top: 37px;
   background-color: #0a6e89;
 }
 ion-button[shape="circle"] {
   --border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 56px;
+  height: 56px;
 }
 ion-button[shape="circle2"] {
   --border-radius: 50%;
-  width: 47px;
-  height: 47px;
+  width: 30px;
+  height: 30px;
 }
 ion-button#send::part(native) {
   width: 56px;
   height: 56px;
   border-radius: 100% !important;
 }
-.input2 {
-  background-color: #e8f3f6;
-}
-.button1 {
-  float: right;
-  position: relative;
-}
-.matacheactivestyle {
+.matacheactive-style {
   font-family: "Trebuchet MS", sans-serif;
   font-size: 15px;
   font-weight: bolder;
 }
-.Tachesactives {
+.Taches-actives-style {
   font-family: "Trebuchet MS", sans-serif;
   font-size: 16px;
   font-weight: bolder;
 }
-.prendreencharestyle {
+.take-charge-by-style {
   font-family: "Trebuchet MS", sans-serif;
   font-size: 12px;
   color: black;
   font-weight: bolder;
 }
-.buttonshape {
-  font-family: "Trebuchet MS", sans-serif;
-}
-.lab1 {
-  color: #288748;
-  font-family: "Trebuchet MS", sans-serif;
-}
-.lab2 {
-  font-family: "Trebuchet MS", sans-serif;
-}
-.lab3 {
-  color: #ffffff;
-  font-family: "Trebuchet MS", sans-serif;
-  font-size: 12px;
-}
-.lab4 {
-  color: #0b7b99;
-  font-family: "Trebuchet MS", sans-serif;
-  font-size: 12px;
-}
+
+
+
+
 .user {
   font-family: "Trebuchet MS", sans-serif;
   font-size: 12px;
   font-weight: normal;
   color: black;
 }
-.datestyle {
+.date-style {
   font-family: "Trebuchet MS", sans-serif;
   font-size: 12px;
 }
-.imgthreedots {
-  width: 12px;
-}
+
 .popover-content {
   border: #0a6e89;
 }
-.textlabelcolor {
+.popover-content-detail {
   font-family: "Trebuchet MS", sans-serif;
   font-size: 12px;
   color: #0a6e89;
 }
-.img1 {
+.image-comment-style {
   width: 30px;
   height: 30px;
 }
-.labbvuedetaille {
-  font-family: "Trebuchet MS", sans-serif;
-  font-size: 12px;
-  color: #0a6e89;
-  font-weight: bold;
+
+.grid-style{
+  background-color: white;
 }
-.general {
-  font-family: "Trebuchet MS", sans-serif;
-  font-size: 12px;
-  color: #f44336;
-}
-.titrestyle {
-  font-family: "Trebuchet MS", sans-serif;
-  font-size: 12px;
-  color: #165c77;
-  font-weight: bold;
-}
+
 ion-icon {
   color: gray;
 }
-ion-icon.icon1 {
+ion-icon.mail-icon {
   color: #0a6e89;
   --ion-color: var(--ion-icon-color);
 }
-.infosnavstyle {
-  font-family: "Trebuchet MS", sans-serif;
-  color: #e84481;
-}
-.textlabelcolor {
+.popover-content-detail {
   color: #0a6e89;
 }
 .popover-content {
@@ -603,13 +542,6 @@ ion-icon.icon1 {
 }
 .footer {
   background-color: #0b7b99;
-  color: #0b7b99;
-}
-.ion-text-wrap {
-  font-family: "Trebuchet MS", sans-serif;
-}
-.ion-text-wrap {
-  font-family: "Trebuchet MS", sans-serif;
   color: #0b7b99;
 }
 </style>

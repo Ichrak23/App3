@@ -6,7 +6,8 @@
           <ion-icon name="menu" slot="start"></ion-icon> </ion-menu-button
       ></ion-toolbar>
       <ion-toolbar style="background-color: #f5f5f5">
-        <ion-label color="primary">En cours ({{ this.counter }})</ion-label>
+        <ion-icon name="return-up-back-outline" @click="$router.push('/home/' + this.workspace +'/' + this.dashboardId)"></ion-icon>
+        <ion-label color="primary" style="margin-left:25px">En cours ({{ this.counter }})</ion-label>
         <ion-icon
           name="reload"
           color="primary"
@@ -21,7 +22,10 @@
         style="min-inline-size: -webkit-fill-available"
       ></ion-spinner>
       <div v-for="document in documents" :key="document.id">
-        <ion-item v-if="document.type" @click="$router.push('/CreateDocument/'+ document.id)">
+        <ion-item
+          v-if="document.type"
+          @click="$router.push('/CreateDocument/' + document.id)"
+        >
           <ion-grid>
             <ion-row>
               <ion-icon
@@ -72,8 +76,9 @@ export default {
   components: { IonToolbar, IonMenuButton, IonIcon, IonLabel, IonContent },
   data() {
     return {
-      wg: "",
-      ws: "",
+      dashboardId:"",
+      widget: "",
+      workspace: "",
       path: "",
       document: "",
       documents: "",
@@ -97,10 +102,12 @@ export default {
     };
   },
   async created() {
-    this.wg = this.$route.params.wg;
-    this.ws = this.$route.params.ws;
+    this.widget = this.$route.params.widget;
+    this.workspace = this.$route.params.workspace;
     this.path = this.$route.params.path;
+    this.dashboardId = this.$route.params.dashboardId
     this.getDocument();
+    
   },
   methods: {
     changeDate(newDate) {
@@ -112,22 +119,30 @@ export default {
       this.counter = 0;
       this.isloaded = false;
       this.documents = "";
-      this.list=[];
+      this.list = [];
       var config = {
         method: "get",
         url:
           "https://localhost:7026/api/Auth/get/document%2Ftray%2F" +
           this.path +
           "%3FwidgetId%3D" +
-          this.wg +
+          this.widget +
           "%26f%3D%26workspaceId%3D" +
-          this.ws +
+          this.workspace +
           "%26start%3D0%26limit%3D300%26sortId%3DTRI_COURRIERS_CHRONO%26sortAsc%3Dfalse",
         headers: {
           "Content-Type": "application/json",
         },
       };
-
+      var config2 = {
+        method: "get",
+         url:
+          "https://localhost:7026/api/Auth/get/%2Ffavorite%2Fd71ac14b1b2cd144b712102c0f4a6e59%3Fstart%3D0%26limit%3D30%26sortId%3DTRI_COURRIERS_CHRONO%26sortAsc%3Dfalse",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      };
+if(this.path!="null"){
       axios(config)
         .then(function (response) {
           local.document = response.data.data.documentsUid;
@@ -144,16 +159,43 @@ export default {
               "Content-Type": "application/json",
             },
             data: {
-              WorkspaceId: local.ws,
+              WorkspaceId: local.workspace,
               DocumentsIds: local.list.split(","),
             },
           };
           axios(config1).then(function (response) {
-            console.log(response.data.data);
             local.documents = response.data.data;
-            local.isloaded=true
+            local.isloaded = true;
           });
-        });
+        })}
+        else{
+          axios(config2)
+        .then(function (response) {
+          local.document = response.data.data.documentsUid;
+          for (let i in local.document) {
+            (local.list = local.list + local.document[i] + ","),
+              (local.counter = local.counter + 1);
+          }
+        })
+        .then(function () {
+          var config1 = {
+            method: "post",
+            url: "https://localhost:7026/api/Auth/post/elise-document%2Flist",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            data: {
+              WorkspaceId: local.workspace,
+              DocumentsIds: local.list.split(","),
+            },
+          };
+          axios(config1).then(function (response) {
+            local.documents = response.data.data;
+            local.isloaded = true;
+          });
+        })
+
+        }
     },
   },
 };

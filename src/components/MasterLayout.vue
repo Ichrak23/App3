@@ -96,7 +96,6 @@ export default {
 
       axios(config).then(function (response) {
         local.listSearch = response.data.data.documentsUid;
-        console.log(local.listSearch);
       });
     }),
     search() {

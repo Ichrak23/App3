@@ -241,13 +241,13 @@
 <script>
 import { useRouter } from "vue-router";
 import axios from "axios";
-import ConfWidget from "../components/ConfWidget.vue";
-import WCounter from "../components/WCounter.vue";
-import ResultList from "../components/ResultList.vue";
-import WShortcut from "../components/WShortcut.vue";
-import WdocumentCreation from "../components/WdocumentCreation.vue";
-import TaskList from "../components/TaskList.vue";
-import WebView from "../components/WebView.vue";
+import ConfWidget from "/src/components/ConfWidget";
+import WCounter from "/src/components/WCounter";
+import ResultList from "/src/components/ResultList";
+import WShortcut from "/src/components/WShortcut";
+import WdocumentCreation from "/src/components/WdocumentCreation";
+import TaskList from "/src/components/TaskList";
+import WebView from "/src/components/WebView";
 import {
   IonCard,
   IonCardHeader,

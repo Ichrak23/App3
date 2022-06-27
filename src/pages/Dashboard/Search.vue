@@ -22,35 +22,35 @@
         color="success"
         style="min-inline-size: -webkit-fill-available"
       ></ion-spinner>
-      <div v-for="document in documents" :key="document.id">
+      <div v-for="doc in documents" :key="doc.id">
         <ion-item
-          v-if="document.type"
-          @click="$router.push('/Document/' + document.id)"
+          v-if="doc.type"
+          @click="$router.push('/Document/' + doc.id)"
         >
           <ion-grid>
             <ion-row>
               <ion-icon
                 name="document-text-outline"
-                :style="{ color: this.colors[document.type.label] }"
+                :style="{ color: this.colors[doc.type.label] }"
               ></ion-icon>
               <ion-label
-                :style="{ color: this.colors[document.type.label] }"
+                :style="{ color: this.colors[doc.type.label] }"
                 style="padding-left: 5px; font-size: 14px"
               >
-                {{ document.type.label }}
+                {{ doc.type.label }}
               </ion-label>
               <ion-label
                 class="time"
                 style="padding-left: 5px; font-size: 14px"
               >
-                {{ document.chrono }}
+                {{ doc.chrono }}
               </ion-label></ion-row
             >
             <ion-label style="padding-left: 20px">
-              {{ document.subject }}
+              {{ doc.subject }}
             </ion-label>
             <ion-label class="time" style="margin-left: -5px">
-              Document du {{ this.changeDate(document.creationDate) }}
+              Document du {{ this.changeDate(doc.creationDate) }}
             </ion-label></ion-grid
           >
         </ion-item>
@@ -108,9 +108,8 @@ export default {
         },
       };
       axios(config).then(function (response) {
-        // console.log(response.data.data);
+        console.log(response.data.data);
         local.documents = response.data.data;
-        console.log(local.documents);
         for (let i in local.documents) {
           local.counter = local.counter + 1;
         }

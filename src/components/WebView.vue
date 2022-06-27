@@ -20,7 +20,7 @@ export default {
   },
   props: {
     widget: Object,
-    Wid:""
+    WorkspaceId:""
   },
   created() {
   },

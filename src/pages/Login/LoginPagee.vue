@@ -4,7 +4,8 @@
       <ion-card class="card">
         <img
           class="instance"
-          src="../../public/assets/instance-logo.png"
+  
+         src="/assets/instance-logo.png"
           alt="logoIns"
         />
         <div class="instance-name">GED</div>
@@ -67,9 +68,6 @@
 <script>
 import axios from "axios";
 import { alertController } from "@ionic/core";
-import { useRouter } from "vue-router";
-import { login } from "@/api/users/users.api";
-import { getUser } from "@/api/users/users.api";
 import {
   IonCard,
   IonCardHeader,
@@ -102,7 +100,7 @@ export default {
     IonPage,
   },
   data() {
-    const router = useRouter();
+    // const router = useRouter();
     return {
       shown: false,
       userInfo: {

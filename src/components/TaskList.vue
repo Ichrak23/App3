@@ -2,12 +2,18 @@
   <ion-card style="height: 400px; width: 360px; overflow-y: scroll">
     <ion-item>
       <span class="list"> &nbsp;{{ this.getTitle() }} </span>
-      <fa style="color: #0062b1" slot="end" icon="refresh" />
+      <fa style="color: #0062b1" slot="end" icon="refresh" @click="getList()" />
     </ion-item>
-    <div v-for="taches in list" :key="taches.id">
-      <div v-if="taches.title[1] == 'u'">
-        <ion-label class="time">{{ taches.title }}</ion-label>
-        <ion-item v-for="tache in taches.tasksInfos" :key="tache.id">
+    <ion-spinner
+        v-if="!isloaded"
+        name="circles"
+        color="success"
+        style="min-inline-size: -webkit-fill-available"
+      ></ion-spinner>
+    <div v-for="tache in list" :key="tache.id">
+      <div v-if="tache.title[1] == 'u'">
+        <ion-label class="time">{{ tache.title }}</ion-label>
+        <ion-item v-for="tache in tache.tasksInfos" :key="tache.id">
           <fa class="icon-fa" icon="angles-right" />
           <div class="cont-p">
             {{ tache.subject }}
@@ -34,13 +40,14 @@ export default {
   },
   data() {
     return {
+      isloaded: false,
       widgets: [],
       list: [],
     };
   },
   props: {
     widget: Object,
-    Wid: "",
+    WorkspaceId: "",
   },
   created() {
     this.getList();
@@ -61,13 +68,15 @@ export default {
     },
     getList() {
       let local = this;
+      this.list=[]
+      this.isloaded = false;
       var config = {
         method: "get",
         url:
           "https://localhost:7026/api/Auth/get/%2Ftask%2Fworkspace%3FwidgetId%3D" +
           this.getId() +
           "%26workspaceId%3D" +
-          this.Wid +
+          this.WorkspaceId +
           "%26sortBy%3Ddate%26totalCount%3D5",
         headers: {
           "Content-Type": "application/json",
@@ -75,6 +84,7 @@ export default {
       };
       axios(config).then(function (response) {
         local.list = response.data.data;
+        local.isloaded = true;
       });
     },
     changeDate(newDate) {

@@ -5,10 +5,6 @@
     <ion-searchbar placeholder="First typing, then hit Enter key or iOS keyboard action button Search">
     </ion-searchbar>
   </form>
-
-
-
-    
     <div>
       <div v-for="widget in widgets" :key="widget.widgetId">
         <div v-if="widget.widgetType == 'counter'">
@@ -53,7 +49,7 @@
 <script>
 import { calendar } from "ionicons/icons";
 import axios from "axios";
-import WCounter from "../components/Counter.vue";
+import WCounter from "/src/components/WCounter";
 import {
   IonDatetime,
   IonLabel,

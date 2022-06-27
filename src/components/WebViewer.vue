@@ -3,7 +3,7 @@
 </template>
 
 <script>
-/* eslint-disable */
+
 import WebViewer from "@pdftron/pdfjs-express";
 export default {
   name: "WebViewer",

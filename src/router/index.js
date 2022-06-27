@@ -1,69 +1,69 @@
 import { createRouter, createWebHistory } from "@ionic/vue-router";
-import HomeM from "../pages/HomePage.vue";
+import Home from "../pages/Home.vue";
 import Search from "../pages/Search.vue";
-import AcTivities from "../pages/AcTivities.vue";
-import ProfilPage from "../pages/ProfilPage";
-import LoginPagee from "../pages/LoginPagee";
-import FollowRequests from "../pages/FollowRequests";
+import Profil from "../pages/Profil";
+import Login from "../pages/Login";
 import WorkSpace from "../pages/WorkSpace";
-import CreateDocument from "../pages/CreateDocument";
-import ListerFichier from "../pages/ListerFichier";
-import AjoutFichier from "../pages/AjoutFichier";
-import Tabs from "../pages/Tabs";
-import Historique from "../pages/Historique";
-import Informations from "../pages/Informations";
-import Processus from "../pages/Processus";
-import WidgetPage from "../pages/WidgetPage";
-import ProcussusCheckButton from "../pages/ProcessusCheckButton.vue";
-import ProcussusSendButton from "../pages/ProcessusSendButton.vue";
+import Document from "../pages/DocumentManagment/Document/Document.vue"
+import AddAttachment from "../pages/DocumentManagment/Document/AddAttachment.vue"
+import AttachmentList from "../pages/DocumentManagment/Document/AttachmentList.vue"
+import Tabs from "../pages/DocumentManagment/Document/Tabs.vue"
+import History from "../pages/DocumentManagment/History/History.vue"
+import Information from "../pages/DocumentManagment/Information/Information.vue"
+import Process from "../pages/DocumentManagment/Process/Process.vue"
+import ProcessCheckButton from "../pages/DocumentManagment/Process/ProcessCheckButton.vue"
+import ProcessSendButton from "../pages/DocumentManagment/Process/ProcessSendButton.vue"
+
+import Widget from "../pages/Widget";
+
 const routes = [
   {
     path: "",
-    redirect: "/loginpagee",
+    redirect: "/login",
   },
   {
     path: "/tab",
-    redirect: "/CreateDocument/:id",
+    redirect: "/Document/:id",
     component: Tabs,
     children: [
       {
-        path: "/CreateDocument/:id",
+        path: "/Document/:id",
 
-        component: CreateDocument,
+        component: Document,
       },
       {
-        path: "/createdocument/Historique/:id",
+        path: "/Document/History/:id",
 
-        component: Historique,
+        component: History,
       },
       {
-        path: "/createdocument/Informations/:id",
+        path: "/Document/Information/:id",
 
-        component: Informations,
+        component: Information,
       },
       {
-        path: "/createdocument/Processus/:id",
+        path: "/Document/Process/:id",
 
-        component: Processus,
+        component: Process,
       },
     ],
   },
 
   {
-    path: "/HomePage/:w/:dashboard",
-    component: HomeM,
+    path: "/Home/:workspace/:dashboard",
+    component: Home,
   },
   {
-    path: "/WidgetPage/:wg/:ws/:path",
-    component: WidgetPage,
+    path: "/Widget/:widget/:workspace/:path/:dashboardId",
+    component: Widget,
   },
   {
-    path: "/ListerFichier/:id",
-    component: ListerFichier,
+    path: "/AttachmentList/:id",
+    component: AttachmentList,
   },
   {
-    path: "/AjoutFichier/:id",
-    component: AjoutFichier,
+    path: "/AddAttachment/:id",
+    component: AddAttachment,
   },
 
   {
@@ -71,33 +71,25 @@ const routes = [
     component: Search,
   },
   {
-    path: "/CreateDocument/:id",
-    component: CreateDocument,
+    path: "/Document/:id",
+    component: Document,
   },
   {
-    path: "/ProcessusSendButton/:id",
-    component: ProcussusSendButton
+    path: "/ProcessSendButton/:id",
+    component: ProcessSendButton
   },
   {
-    path: "/ProcessusCheckButton/:id",
-    component: ProcussusCheckButton,
-  },
-  {
-    path: "/FollowRequests",
-    component: FollowRequests,
-  },
-  {
-    path: "/AcTivities",
-    component: AcTivities,
+    path: "/ProcessCheckButton/:id",
+    component: ProcessCheckButton,
   },
  
   {
-    path: "/ProfilPage",
-    component: ProfilPage,
+    path: "/Profil",
+    component: Profil,
   },
   {
-    path: "/LoginPagee",
-    component: LoginPagee,
+    path: "/Login",
+    component: Login,
   },
   {
     path: "/WorkSpace",

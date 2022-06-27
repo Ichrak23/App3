@@ -9,13 +9,13 @@
             color="light"
             @click="
               $router.push(
-                '/home/e5720509-1cb8-41f0-beae-50d9bb48d944/e10416ad-e9db-4b2e-b6bb-643d96cf046b'
+                '/homepage/e5720509-1cb8-41f0-beae-50d9bb48d944/e10416ad-e9db-4b2e-b6bb-643d96cf046b'
               )
             "
           ></ion-icon>
           <ion-col
             style="margin-top: -15px; text-align: center"
-            @click="$router.push('/Profil')"
+            @click="$router.push('/ProfilPage')"
           >
             <ion-label style="font-size: 13px">profile</ion-label>
           </ion-col>
@@ -144,25 +144,24 @@
                       space.flowchartItemRequester.label
                     }}</label>
                   </div>
-                </ion-col>
-              </ion-item>
-              <ion-item-options side="end">
-                <ion-item-option @click="Space = space;
-                      Edit();">
-                  <ion-icon
-                    name="create-outline"
-                    slot="icon-only"
-                    style="margin-top: 5px; font-size: 13px"
-                  ></ion-icon
-                ></ion-item-option>
-                <ion-item-option color="danger" @click="deleteWorkspace(space)">
-                  <ion-icon
-                    name="trash"
-                    slot="icon-only"
-                    style="margin-top: 5px; font-size: 13px"
-                  ></ion-icon
-                ></ion-item-option>
-              </ion-item-options>
+                </ion-col> </ion-item>
+                 <ion-item-options side="end">
+                   <ion-item-option  @click="">
+                      <ion-icon
+                        name="create-outline"
+                        slot="icon-only"
+                        style="margin-top: 5px; font-size: 13px"
+                      ></ion-icon
+                    ></ion-item-option>
+                    <ion-item-option color="danger" @click="delWs(space)">
+                      <ion-icon
+                        name="trash"
+                        slot="icon-only"
+                        style="margin-top: 5px; font-size: 13px"
+                      ></ion-icon
+                    ></ion-item-option>
+                  </ion-item-options>
+                 
             </ion-item-sliding>
 
             <ion-button
@@ -186,7 +185,7 @@
                   >Nom *</ion-label
                 >
                 <ion-input
-                  v-model="nameWorkspace"
+                  v-model="nameWs"
                   style="font-size: 12px"
                   placeholder=" Obligatoire"
                   class="input-mdl"
@@ -209,7 +208,7 @@
                   v-for="user in listSearchWorkspacef"
                   :key="user.id"
                   style="margin-left: 20px"
-                 >
+                >
                   <ion-item
                     @click="
                       userc = user;
@@ -272,7 +271,7 @@
                 >
                   <ion-item
                     @click="
-                      getUser(user);
+                      gettt(user);
                       listSearchWorkspace = [];
                     "
                   >
@@ -288,7 +287,7 @@
                 </ion-row>
                 <ion-button
                   @click="
-                    newWorkspace()
+                    newWs();
                     shown = !shown;
                   "
                   fill="clear"
@@ -299,9 +298,7 @@
               </div>
             </div>
           </ion-content>
-        </ion-modal> 
-        <edit-workspace v-if="showConfig" 
-      :space="Space" ></edit-workspace>
+        </ion-modal>
       </div>
     </ion-content>
   </ion-page>
@@ -310,7 +307,6 @@
 import { defineComponent } from "vue";
 import { debounce } from "debounce";
 import axios from "axios";
-import EditWorkspace from "../components/EditWorkspace.vue";
 import {
   IonContent,
   IonItemSliding,
@@ -347,31 +343,28 @@ export default defineComponent({
     IonLabel,
     IonCol,
     IonIcon,
-    EditWorkspace,
   },
   data() {
     return {
       listSearchWorkspace: [],
       listSearchWorkspacef: [],
       space: [],
-      Space: "",
       shown: false,
       shown1: false,
       userc: [],
       userd: [],
-      nameWorkspace: "",
+      nameWs: "",
       labelc: "",
       labelr: "",
-      showConfig: false,
     };
   },
   created() {
-    this.getWorkspace();
+    this.getWS();
   },
   methods: {
     debounceInput2: debounce(function (e) {
       let local = this;
-      var config2 = {
+      var conf2 = {
         method: "get",
         url:
           "https://localhost:7026/api/Auth/get/flowchart%2Fsearch%2Fall%3Fq%3D" +
@@ -381,18 +374,14 @@ export default defineComponent({
           "Content-Type": "application/json",
         },
       };
-      axios(config2).then(function (response6) {
+      axios(conf2).then(function (response6) {
         local.listSearchWorkspace = response6.data.results;
       });
     }),
     getImageURl() {
       return "/assets/default-avatar.jpg";
     },
-    Edit() {
-      this.showConfig = true;
-      console.log(this.showConfig);
-    },
-    getNotification() {
+    getNot() {
       let local = this;
       var notification = {
         method: "get",
@@ -407,7 +396,7 @@ export default defineComponent({
     },
     debounceInput3: debounce(function (e) {
       let local = this;
-      var config3 = {
+      var conf3 = {
         method: "get",
         url:
           "https://localhost:7026/api/Auth/get/flowchart%2Fsearch%2Fall%3Fq%3D" +
@@ -417,11 +406,11 @@ export default defineComponent({
           "Content-Type": "application/json",
         },
       };
-      axios(config3).then(function (response7) {
+      axios(conf3).then(function (response7) {
         local.listSearchWorkspacef = response7.data.results;
       });
     }),
-    newWorkspace() {
+    newWs() {
       let local = this;
       var config = {
         method: "post",
@@ -430,7 +419,7 @@ export default defineComponent({
           "Content-Type": "application/json",
         },
         data: {
-          label: local.nameWorkspace,
+          label: local.nameWs,
           flowchartItemUidInChargeOfDocuments: local.userc.uid,
           flowchartItemUidRequester: local.userd.uid,
           flowchartItemUidWorkspaceContent: [
@@ -440,10 +429,10 @@ export default defineComponent({
       };
 
       axios(config).then(() => {
-        local.getWorkspace();
+        local.getWS();
       });
     },
-    getWorkspace() {
+    getWS() {
       let local = this;
       var space = {
         method: "get",
@@ -452,15 +441,15 @@ export default defineComponent({
           "Content-Type": "application/json",
         },
       };
-      axios(space).then(function (response) {
-        local.space = response.data.data;
+      axios(space).then(function (response3) {
+        local.space = response3.data.data;
         local.labelc =
           local.space.defaultWorkspace.flowchartItemInChargeOfDocuments.label;
         local.labelr =
           local.space.defaultWorkspace.flowchartItemRequester.label;
       });
     },
-    deleteWorkspace(space) {
+    delWs(space) {
       let local = this;
       var config = {
         method: "delete",
@@ -472,10 +461,10 @@ export default defineComponent({
         },
       };
       axios(config).then(() => {
-        local.getWorkspace();
+        local.getWS();
       });
     },
-    getUser(user) {
+    gettt(user) {
       this.userd.push(user);
     },
   },

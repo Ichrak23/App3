@@ -1,24 +1,24 @@
 <template>
   <ion-page>
-    <ion-header class="header2">
+    <ion-header class="header-style">
       <ion-toolbar>
-        <ion-grid style="background-color: white;">
+        <ion-grid class="grid-style">
           <ion-row>
-              <ion-row style="align-items: center">
-            <ion-button fill="clear" :href="'/createdocument/Processus/'+this.id">
+              <ion-row >
+            <ion-button fill="clear" :href="'/Document/'+this.id">
               <ion-icon :icon="arrowBack"></ion-icon>
             </ion-button>
             <ion-input id="input" type="text"></ion-input>
             
               <ion-button
-                id="nested-button1"
+                id="nested-first-button"
                 shape="circle"
                 class="buttonshape"
                 color="primary"
               >
                 <ion-icon :icon="add" size="large" color="light"></ion-icon></ion-button>
               <ion-popover
-                trigger="nested-button1"
+                trigger="nested-first-button"
                 :dismiss-on-select="false"
                 color="white"
               >
@@ -27,28 +27,28 @@
                     <ion-item :button="true" :detail="false" >
                       <ion-icon id="podiumicon" :icon="person" style="margin-top: -12px;"></ion-icon>
                       &nbsp;
-                      <ion-label class="textlabelcolor"
+                      <ion-label class="popover-content-detail"
                         >Demander des taches</ion-label
                       >
                     </ion-item>
                     <ion-item :button="true" :detail="false">
                       <ion-icon id="podiumicon" :icon="keypad"></ion-icon>
                       &nbsp;
-                      <ion-label class="textlabelcolor"
+                      <ion-label class="popover-content-detail"
                         >Appliquer un processus</ion-label
                       >
                     </ion-item>
                     <ion-item :button="true" :detail="false">
                       <ion-icon id="podiumicon" :icon="copy"></ion-icon>
                       &nbsp;
-                      <ion-label class="textlabelcolor"
+                      <ion-label class="popover-content-detail"
                         >lier des documents</ion-label
                       >
                     </ion-item>
                     <ion-item :button="true" :detail="false">
                       <ion-icon id="podiumicon" :icon="link"></ion-icon>
                       &nbsp;
-                      <ion-label class="textlabelcolor"
+                      <ion-label class="popover-content-detail"
                         >Ajouter un lien externe</ion-label
                       >
                     </ion-item>
@@ -80,15 +80,15 @@
                     :detail="false"
                     @click="presentAlert"
                   >
-                    <ion-icon id="icon1" :icon="mail"></ion-icon>&nbsp;
-                    <ion-label class="textlabelcolor"
+                    <ion-icon id="mail-icon" :icon="mail"></ion-icon>&nbsp;
+                    <ion-label class="popover-content-detail"
                       >Diffuser le document</ion-label
                     >
                   </ion-item>
                   <ion-item :button="true" :detail="false">
                     <ion-icon :icon="checkbox"></ion-icon>
                     &nbsp;
-                    <ion-label class="textlabelcolor"
+                    <ion-label class="popover-content-detail"
                       >Cloturer le document</ion-label
                     >
                   </ion-item>
@@ -99,21 +99,21 @@
                   >
                     <ion-icon :icon="download"></ion-icon>
                     &nbsp;
-                    <ion-label class="textlabelcolor"
+                    <ion-label class="popover-content-detail"
                       >Réserver le document</ion-label
                     >
                   </ion-item>
                   <ion-item :button="true" :detail="false">
                     <ion-icon :icon="print"></ion-icon>
                     &nbsp;
-                    <ion-label class="textlabelcolor"
+                    <ion-label class="popover-content-detail"
                       >Imprimer la fiche de numérisation</ion-label
                     >
                   </ion-item>
                   <ion-item :button="true" :detail="false">
                     <ion-icon :icon="create"></ion-icon>
                     &nbsp;
-                    <ion-label class="textlabelcolor"
+                    <ion-label class="popover-content-detail"
                       >Créer une procédure de signature<br />
                       graphique</ion-label
                     >
@@ -131,7 +131,7 @@
         <br />
         <ion-item>
           <ion-item>
-            <ion-label class="matacheactivestyle" style="color: #0b7b99"
+            <ion-label class="matacheactive-style" style="color: #0b7b99"
               >PROCESSUS D'ÉLABORATION</ion-label
             >
             <ion-select
@@ -139,7 +139,7 @@
               interface="popover"
             >
               <ion-select-option
-                class="matacheactivestyle"
+                class="matacheactive-style"
                 value="PROCESSUSDETRAITEMENT"
                 size="cover"
                 >PROCESSUS DE TRAITEMENT</ion-select-option
@@ -152,11 +152,11 @@
         <br />
         <br />
 
-        <ion-label class="Tachesactives" style="color: #4a4a4a"
+        <ion-label class="taches-actives-style" style="color: #4a4a4a"
           >Tâches actives (1)</ion-label
         >
 
-        <ion-card class="ion-card1">
+        <ion-card class="card-style">
           <ion-row>
             <div class="task-avatar">
               <ion-col>
@@ -178,14 +178,14 @@
             <ion-grid>
                 <ion-row>
             <ion-col size="8">
-              <div class="prendreencharestyle">1. Prendre en charge</div>
+              <div class="take-charge-by-style">1. Prendre en charge</div>
               <div class="user">
                 <ion-label>{{ document.createdBy }}</ion-label
                 >><ion-label>{{ document.modifiedBy }}</ion-label>
               </div>
             </ion-col>
             <ion-col>
-              <div class="datestyle">{{ document.creationDate }}</div>
+              <div class="date-style">{{ document.creationDate }}</div>
             </ion-col>
 
             
@@ -202,7 +202,7 @@
             </div>
           </ion-row>
           <ion-row>
-            <img class="img1" src="/assets/comment.png" />
+            <img class="image-comment-style" src="/assets/comment.png" />
             <ion-textarea
               placeholder="Enter votre commentaire..."
             ></ion-textarea>
@@ -212,7 +212,7 @@
               color="primary"
               id="send"
               @click="presentLoading"
-             :href="'/ProcessusCheckButton/'+this.id"
+             :href="'/ProcessCheckButton/'+this.id"
             >
               <ion-icon :icon="checkmark" size="large"></ion-icon>
             </ion-button>
@@ -281,7 +281,7 @@ export default defineComponent({
   props: {
     timeout: { type: Number, default: 1000 },
   },
-  name: "informationss",
+  name: "Informations",
   components: {
     IonContent,
     IonHeader,
@@ -456,13 +456,13 @@ export default defineComponent({
 });
 </script>
 <style scoped>
-.header2 {
+.header-style {
   background-color: #0a6e89;
 }
-.ion-card1 {
+.card-style {
   background-color: #e8f3f6;
 }
-.icon1 {
+.mail-icon {
   position: absolute;
   top: 25%;
   right: 0;
@@ -479,39 +479,7 @@ ion-select-option {
   font-size: 20px;
   font-weight: bolder;
 }
-.task-avatar {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-.tache-jelon {
-  position: absolute;
-  top: calc(50% - 8px);
-  height: 18px;
-  width: 18px;
-  background-color: #0a6e89;
-  border-radius: 50%;
-  z-index: 9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: -2px;
-}
-.task-type-icon-wrapper {
-  bottom: 0;
-  display: flex;
-  width: 18px;
-  height: 18px;
-  font-size: 16px;
-  border-radius: 30px;
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  z-index: 9;
-  right: 0;
-  top: 37px;
-  background-color: #0a6e89;
-}
+
 ion-button[shape="circle"] {
   --border-radius: 50%;
   width: 56px;
@@ -528,105 +496,65 @@ ion-button#send::part(native) {
   height: 56px;
   border-radius: 100% !important;
 }
-.input2 {
-  background-color: #e8f3f6;
+
+.grid-style{
+  background-color: white;
 }
 
-.button1 {
-  float: right;
-  position: relative;
-}
-.matacheactivestyle {
+.matacheactive-style {
   font-family: "Trebuchet MS", sans-serif;
   font-size: 20px;
   font-weight: bolder;
 }
-.Tachesactives {
+.taches-actives-style {
   font-family: "Trebuchet MS", sans-serif;
   font-size: 16px;
   font-weight: bolder;
 }
-.prendreencharestyle {
+.take-charge-by-style {
   font-family: "Trebuchet MS", sans-serif;
   font-size: 12px;
   color: black;
   font-weight: bolder;
 }
-.buttonshape {
-  font-family: "Trebuchet MS", sans-serif;
-}
-.lab1 {
-  color: #288748;
-  font-family: "Trebuchet MS", sans-serif;
-}
-.lab2 {
-  font-family: "Trebuchet MS", sans-serif;
-}
-.lab3 {
-  color: #ffffff;
-  font-family: "Trebuchet MS", sans-serif;
-  font-size: 12px;
-}
-.lab4 {
-  color: #0b7b99;
-  font-family: "Trebuchet MS", sans-serif;
-  font-size: 12px;
-}
+
+
 .user {
   font-family: "Trebuchet MS", sans-serif;
   font-size: 12px;
   font-weight: normal;
   color: black;
 }
-.datestyle {
+.date-style {
   font-family: "Trebuchet MS", sans-serif;
   font-size: 12px;
 }
-.imgthreedots {
-  width: 12px;
-}
+
 .popover-content {
   border: #0a6e89;
 }
-.textlabelcolor {
+.popover-content-detail {
   font-family: "Trebuchet MS", sans-serif;
   font-size: 12px;
   color: #0a6e89;
 }
-.img1 {
+.image-comment-style {
   width: 30px;
   height: 30px;
 }
-.labbvuedetaille {
-  font-family: "Trebuchet MS", sans-serif;
-  font-size: 12px;
-  color: #0a6e89;
-  font-weight: bold;
-}
 
-.general {
-  font-family: "Trebuchet MS", sans-serif;
-  font-size: 12px;
-  color: #f44336;
-}
-.titrestyle {
-  font-family: "Trebuchet MS", sans-serif;
-  font-size: 12px;
-  color: #165c77;
-  font-weight: bold;
-}
+
+
+
 ion-icon {
   color: gray;
 }
-ion-icon.icon1 {
+ion-icon.mail-icon {
   color: #0a6e89;
   --ion-color: var(--ion-icon-color);
 }
-.infosnavstyle {
-  font-family: "Trebuchet MS", sans-serif;
-  color: #e84481;
-}
-.textlabelcolor {
+
+.popover-content-detail {
   color: #0a6e89;
 }
 .popover-content {
@@ -638,11 +566,8 @@ ion-icon.icon1 {
 .my-custom-class {
   font-family: "Trebuchet MS", sans-serif;
 }
-.myCustomSelect {
+.my-custom-select {
   width: 100% !important;
 }
-.footer {
-  background-color: #0b7b99;
-  color: #0b7b99;
-}
+
 </style>
